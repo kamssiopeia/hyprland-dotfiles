@@ -1,0 +1,51 @@
+{
+    // Global configuration
+    "layer": "top",
+    "output": "DP-6",
+    "position": "top",
+    "height": 0,
+    "spacing": 5,
+    // Modules order
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "tray",
+        "battery",
+        "clock"
+    ],
+    // Modules configuration
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "on-click": "activate",
+        "disable-scroll": true,
+        "warp-on-scroll": false
+    },
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "Europe/Warsaw",
+        "format": "{: %d/%m  %R}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    }
+}
+

@@ -1,0 +1,61 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: Cartograph CF Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+window#waybar {
+    background: rgba(21, 18, 27, 0);
+    color: #cdd6f4;
+}
+
+/* 
+#workspaces button {
+    padding: 5px;
+    color: #313244;
+}
+
+#workspaces button.active {
+    color: #89dceb;
+}
+
+#workspaces button.focused {
+    color: #89dceb;
+    background: #eba0ac;
+    border-radius: 10px;
+}
+
+#workspaces button:hover {
+    background: #11111b;
+    color: #89dceb;
+    border-radius: 10px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
+} */
+
+#workspaces,
+#window,
+#battery,
+#tray,
+#clock {
+    color: #89dceb;
+    background: #1e1e2e;
+    padding: 0px 10px;
+    margin-top: 8px;
+    border: 1px solid #181825;
+    border-radius: 10px;
+}
+
+#workspaces {
+    margin-left: 8px;
+}
+
+#clock {
+    margin-right: 8px;
+}
