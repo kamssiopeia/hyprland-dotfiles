@@ -14,6 +14,7 @@
     ],
     "modules-right": [
         "tray",
+        "pulseaudio",
         "battery",
         "clock"
     ],
@@ -27,6 +28,26 @@
     "hyprland/window": {
         "format": "{}"
     },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{icon}{volume}%",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    },
+
     "battery": {
         "states": {
             "good": 95,
