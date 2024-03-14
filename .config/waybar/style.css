@@ -1,61 +1,48 @@
 * {
     border: none;
     border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
     font-family: Cartograph CF Nerd Font, monospace;
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+    background: rgba(0,0,0,0);
 }
 
-/* 
+.modules-left {
+    margin-left: 8px;
+}
+
+.modules-right {
+    margin-right: 8px;
+}
+
 #workspaces button {
-    padding: 5px;
-    color: #313244;
-}
-
-#workspaces button.active {
-    color: #89dceb;
-}
-
-#workspaces button.focused {
-    color: #89dceb;
-    background: #eba0ac;
-    border-radius: 10px;
+    padding: 0 8px;
+    color: #5d5d68;
+    border-radius: 50%;
 }
 
 #workspaces button:hover {
     background: #11111b;
-    color: #89dceb;
-    border-radius: 10px;
+    color: #F0F3FF;
 }
 
-#workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    border-radius: 10px;
-} */
+#workspaces button.active {
+    color: #F0F3FF;
+}
 
 #workspaces,
 #window,
 #battery,
 #tray,
 #clock {
-    color: #89dceb;
-    background: #1e1e2e;
-    padding: 0px 10px;
+    color: #F0F3FF;
+    background: #222831;
     margin-top: 8px;
-    border: 1px solid #181825;
+    padding: 4px 10px;
     border-radius: 10px;
-}
-
-#workspaces {
-    margin-left: 8px;
-}
-
-#clock {
-    margin-right: 8px;
 }
