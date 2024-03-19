@@ -1,4 +1,5 @@
-@define-color font #F0F3FF;
+@define-color font-light #F0F3FF;
+@define-color font-dark #11111b;
 @define-color main #222831;
 @define-color accent1 #9F70FD;
 
@@ -26,7 +27,7 @@ window#waybar {
 
 #workspaces button {
     padding: 0 8px;
-    color: @font;
+    color: @font-light;
     border-radius: 7px;
 }
 
@@ -36,7 +37,7 @@ window#waybar {
 
 #workspaces button.active {
     background: @accent1;
-    color: #11111b;
+    color: @font-dark;
 }
 
 #workspaces,
@@ -45,7 +46,7 @@ window#waybar {
 #battery,
 #tray,
 #clock {
-    color: @font;
+    color: @font-light;
     background: @main;
     margin-top: 8px;
     padding: 4px 10px;
