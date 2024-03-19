@@ -1,5 +1,6 @@
 @define-color font #F0F3FF;
 @define-color main #222831;
+@define-color accent1 #9F70FD;
 
 * {
     border: none;
@@ -25,17 +26,17 @@ window#waybar {
 
 #workspaces button {
     padding: 0 8px;
-    color: #5d5d68;
-    border-radius: 50%;
+    color: @font;
+    border-radius: 7px;
 }
 
 #workspaces button:hover {
-    background: #11111b;
-    color: @font;
+    color: @accent1;
 }
 
 #workspaces button.active {
-    color: @font;
+    background: @accent1;
+    color: #11111b;
 }
 
 #workspaces,

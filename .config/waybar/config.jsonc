@@ -47,7 +47,6 @@
         },
         "on-click": "pavucontrol"
     },
-
     "battery": {
         "states": {
             "good": 95,
