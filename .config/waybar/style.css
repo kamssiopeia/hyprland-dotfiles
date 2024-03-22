@@ -17,6 +17,10 @@ window#waybar {
     background: rgba(0,0,0,0);
 }
 
+window#waybar.empty #window {  
+    background:none;  
+}
+
 .modules-left {
     margin-left: 8px;
 }
@@ -33,7 +37,7 @@ window#waybar {
 
 #workspaces button:hover {
     color: @accent1;
-}
+}  
 
 #workspaces button.active {
     background: @accent1;
