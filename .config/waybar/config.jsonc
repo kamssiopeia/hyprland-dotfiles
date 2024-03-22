@@ -64,19 +64,6 @@
     "format": " {:%d.%m %R}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
-  "custom/playerctl": {
-    "format": "{icon} <span>{}</span>",
-    "return-type": "json",
-    "max-length": 50,
-    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl previous",
-    "on-scroll-down": "playerctl next",
-    "format-icons": {
-      "Playing": "<span foreground='#98BB6C'></span>",
-      "Paused": "<span foreground='#E46876'></span>"
-    }
-  },
   "custom/notification": {
     "tooltip": false,
     "format": "{icon}",
