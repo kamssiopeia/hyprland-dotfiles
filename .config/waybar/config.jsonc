@@ -1,85 +1,74 @@
 {
-    // Global configuration
-    "layer": "top",
-    "output": "DP-6",
-    "position": "top",
-    "height": 0,
-    "spacing": 5,
-    // Modules order
-    "modules-left": [
-        "hyprland/workspaces",
-        "custom/playerctl"
-    ],
-    "modules-center": [
-        "hyprland/window"
-    ],
-    "modules-right": [
-        "tray",
-        "pulseaudio",
-        "battery",
-        "clock"
-    ],
-    // Modules configuration
-    "hyprland/workspaces": {
-        "all-outputs": true,
-        "on-click": "activate",
-        "disable-scroll": true,
-        "warp-on-scroll": false
+  // Global configuration
+  "layer": "top",
+  "output": "DP-6",
+  "position": "top",
+  "height": 0,
+  "spacing": 5,
+  // Modules order
+  "modules-left": ["hyprland/workspaces", "custom/playerctl"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["tray", "pulseaudio", "battery", "clock"],
+  // Modules configuration
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "on-click": "activate",
+    "disable-scroll": true,
+    "warp-on-scroll": false
+  },
+  "hyprland/window": {
+    "format": "{}"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "format": "{icon}{volume}%",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": " {format_source}",
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", " ", " "]
     },
-    "hyprland/window": {
-        "format": "{}"
+    "on-click": "pavucontrol"
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
     },
-    "pulseaudio": {
-        "scroll-step": 5,
-        "format": "{icon}{volume}%",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", " ", " "]
-        },
-        "on-click": "pavucontrol"
-    },
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
-    },
-    "tray": {
-        "icon-size": 20,
-        "spacing": 10
-    },
-    "clock": {
-        "timezone": "Europe/Warsaw",
-        "format": " {:%d.%m %R}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-    "custom/playerctl": {
-        "format": "{icon} <span>{}</span>",
-        "return-type": "json",
-        "max-length": 50,
-        "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
-        "on-click": "playerctl play-pause",
-        "on-scroll-up": "playerctl previous",
-        "on-scroll-down": "playerctl next",
-        "format-icons": {
-            "Playing": "<span foreground='#98BB6C'></span>",
-            "Paused": "<span foreground='#E46876'></span>"
-        }
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+  },
+  "tray": {
+    "icon-size": 20,
+    "spacing": 10
+  },
+  "clock": {
+    "timezone": "Europe/Warsaw",
+    "format": " {:%d.%m %R}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "custom/playerctl": {
+    "format": "{icon} <span>{}</span>",
+    "return-type": "json",
+    "max-length": 50,
+    "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} ~ {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next",
+    "format-icons": {
+      "Playing": "<span foreground='#98BB6C'></span>",
+      "Paused": "<span foreground='#E46876'></span>"
     }
+  }
 }
-
