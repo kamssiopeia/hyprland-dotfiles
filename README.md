@@ -14,7 +14,7 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 * Intellij flickering https://github.com/hyprwm/Hyprland/issues/3450 / https://github.com/hyprwm/Hyprland/issues/3450
 
 # Current dependencies:
-hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol hyprpaper hyprlock
+hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol hyprpaper hyprlock swaync
 
 # TODO:
 * Create installation dependencies command
@@ -42,3 +42,4 @@ hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol
 * Virtual desktopesque workspaces - https://github.com/levnikmyskin/hyprland-virtual-desktops
 * Password between VMs - https://wiki.archlinux.org/title/Chromium#Force_a_password_store
     * Maybe use KeePassXC
+* Configure styles to be similar in all application ie. terminal background like waybar background etc.
