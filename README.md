@@ -33,6 +33,7 @@ hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol
     * hypridle
 * Add notifications
     * Configure different notification daemon for KDE and hyprland
+    * Configure notifications to show only on main screen
 * Add rofi
 * Add media center
 * Add file manager
@@ -43,3 +44,10 @@ hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol
 * Password between VMs - https://wiki.archlinux.org/title/Chromium#Force_a_password_store
     * Maybe use KeePassXC
 * Configure styles to be similar in all application ie. terminal background like waybar background etc.
+* Configure screen sharing
+
+# Credits and inspirations
+Configuration based and inspired on:
+* https://gitlab.com/stephan-raabe/dotfiles
+* https://gitlab.com/thelinuxcast/my-dots
+* https://github.com/justinmdickey/publicdots/tree/main
