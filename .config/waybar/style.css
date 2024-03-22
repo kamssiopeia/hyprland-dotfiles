@@ -40,12 +40,17 @@ window#waybar {
     color: @font-dark;
 }
 
+#custom-notification {
+    font-family: "NotoSansMono Nerd Font"
+}
+
 #workspaces,
 #custom-playerctl,
 #window,
 #pulseaudio,
 #battery,
 #tray,
+#custom-notification,
 #clock {
     color: @font-light;
     background: @main;

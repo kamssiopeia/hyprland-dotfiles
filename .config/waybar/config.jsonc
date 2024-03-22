@@ -8,7 +8,13 @@
   // Modules order
   "modules-left": ["hyprland/workspaces", "custom/playerctl"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["tray", "pulseaudio", "battery", "clock"],
+  "modules-right": [
+    "tray",
+    "custom/notification",
+    "pulseaudio",
+    "battery",
+    "clock"
+  ],
   // Modules configuration
   "hyprland/workspaces": {
     "all-outputs": true,
@@ -70,5 +76,25 @@
       "Playing": "<span foreground='#98BB6C'></span>",
       "Paused": "<span foreground='#E46876'></span>"
     }
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='#EE4266'></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='#EE4266'></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='#EE4266'></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='#EE4266'></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
   }
 }
