@@ -29,6 +29,25 @@ window#waybar.empty #window {
     margin-right: 8px;
 }
 
+#workspaces,
+#window,
+#pulseaudio,
+#battery,
+#tray,
+#custom-notification,
+#clock {
+    color: @font-light;
+    background: @main;
+    margin-top: 8px;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+
+#workspaces {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
 #workspaces button {
     padding: 0 8px;
     color: @font-light;
@@ -46,18 +65,4 @@ window#waybar.empty #window {
 
 #custom-notification {
     font-family: "NotoSansMono Nerd Font"
-}
-
-#workspaces,
-#window,
-#pulseaudio,
-#battery,
-#tray,
-#custom-notification,
-#clock {
-    color: @font-light;
-    background: @main;
-    margin-top: 8px;
-    padding: 4px 10px;
-    border-radius: 10px;
 }
