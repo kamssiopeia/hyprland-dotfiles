@@ -14,7 +14,7 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 * Intellij flickering https://github.com/hyprwm/Hyprland/issues/3450 / https://github.com/hyprwm/Hyprland/issues/3450
 
 # Current dependencies:
-hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol hyprpaper hyprlock swaync
+hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol hyprpaper hyprlock swaync xdg-desktop-portal-hyprland nautilus
 
 # TODO:
 * Create installation dependencies command
@@ -45,6 +45,10 @@ hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol
     * Maybe use KeePassXC
 * Configure styles to be similar in all application ie. terminal background like waybar background etc.
 * Configure screen sharing
+* Add GTK theme
+* Add QT theme
+* Add ARCH update checker
+* force_default_wallpaper = 0
 
 # Credits and inspirations
 Configuration based and inspired on:
