@@ -1,7 +1,6 @@
 {
   // Global configuration
   "layer": "top",
-  "output": "DP-6",
   "position": "top",
   "height": 0,
   "spacing": 5,
