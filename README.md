@@ -17,7 +17,7 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 hyprland hyprpaper hyprlock xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol
 network-manager network-manager-applet
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look
-kitty nautilus keepassxc
+kitty nemo keepassxc
 
 # Changing cursor theme
 More information https://wiki.archlinux.org/title/Cursor_themes
