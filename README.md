@@ -19,6 +19,15 @@ network-manager network-manager-applet
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look
 kitty nautilus keepassxc
 
+# Changing cursor theme
+More information https://wiki.archlinux.org/title/Cursor_themes
+
+* download cursor and move downloaded directory to `/usr/share/icons`
+* install and run `nwg-look` and change cursor under `Mouse cursor` menu
+* edit `/usr/share/icons/default/index.theme` to match cursor directory
+* create and edit `/home/USER/.icons/default/index.theme` to match cursor directory
+* don't change anything in `.gtkrc-2.0`, this file will be overwritten by nwg-look
+
 # TODO:
 * Create installation dependencies command
 * Add fonts to dependencies
