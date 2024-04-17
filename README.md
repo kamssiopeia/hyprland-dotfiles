@@ -14,7 +14,10 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 * Intellij flickering https://github.com/hyprwm/Hyprland/issues/3450 / https://github.com/hyprwm/Hyprland/issues/3450
 
 # Current dependencies:
-hyprland waybar rofi-lbonn-wayland kitty papirus-icon-theme pipewire pavucontrol hyprpaper hyprlock swaync xdg-desktop-portal-hyprland nautilus
+hyprland hyprpaper hyprlock xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol
+network-manager network-manager-applet
+papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look
+kitty nautilus keepassxc
 
 # TODO:
 * Create installation dependencies command
