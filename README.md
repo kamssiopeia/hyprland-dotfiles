@@ -14,7 +14,7 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 * Intellij flickering https://github.com/hyprwm/Hyprland/issues/3450 / https://github.com/hyprwm/Hyprland/issues/3450
 
 # Current dependencies:
-hyprland hyprpaper hyprlock xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol
+hyprland hyprpaper hyprlock xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp
 network-manager network-manager-applet
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
 kitty nemo keepassxc
