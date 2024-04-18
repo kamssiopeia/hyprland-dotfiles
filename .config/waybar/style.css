@@ -1,7 +1,6 @@
-@define-color font-light #F0F3FF;
-@define-color font-dark #11111b;
-@define-color main #222831;
-@define-color accent1 #9F70FD;
+@define-color background #282A36;
+@define-color foreground #F8F8F2;
+@define-color purple #BD93F9;
 
 * {
     border: none;
@@ -36,8 +35,8 @@ window#waybar.empty #window {
 #tray,
 #custom-notification,
 #clock {
-    color: @font-light;
-    background: @main;
+    color: @foreground;
+    background: @background;
     margin-top: 8px;
     padding: 4px 10px;
     border-radius: 10px;
@@ -50,17 +49,17 @@ window#waybar.empty #window {
 
 #workspaces button {
     padding: 0 8px;
-    color: @font-light;
+    color: @foreground;
     border-radius: 7px;
 }
 
 #workspaces button:hover {
-    color: @accent1;
+    color: @purple;
 }  
 
 #workspaces button.active {
-    background: @accent1;
-    color: @font-dark;
+    background: @purple;
+    color: @background;
 }
 
 #custom-notification {
