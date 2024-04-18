@@ -19,9 +19,12 @@ network-manager network-manager-applet
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look
 kitty nemo keepassxc
 
-# Changing cursor theme
-More information https://wiki.archlinux.org/title/Cursor_themes
+# Changing cursor theme:
+More information:
+* https://wiki.archlinux.org/title/Cursor_themes 
+* https://www.youtube.com/watch?v=CF3UFxH8d0Y
 
+## Instruction:
 * download cursor and move downloaded directory to `/usr/share/icons`
 * install and run `nwg-look` and change cursor under `Mouse cursor` menu
 * edit `/usr/share/icons/default/index.theme` to match cursor directory
