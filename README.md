@@ -16,24 +16,30 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 # Current dependencies:
 hyprland hyprpaper hyprlock xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol
 network-manager network-manager-applet
-papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look
+papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
 kitty nemo keepassxc
 
-# Changing cursor theme:
+# Changing GTK themes:
 More information:
 * https://wiki.archlinux.org/title/Cursor_themes 
 * https://www.youtube.com/watch?v=CF3UFxH8d0Y
 
-## Instruction:
-* download cursor and move downloaded directory to `/usr/share/icons`
-* install and run `nwg-look` and change cursor under `Mouse cursor` menu
+## Changing theme:
+* download theme and move to `/usr/share/themes`
+* install and run `nwg-look` and change theme under `Widgets` tab
+
+## Changing icons:
+* download theme and move to `/usr/share/icons`
+* install and run `nwg-look` and change theme under `Icon theme` tab
+
+## Changing cursor:
+* download cursor and move it to `/usr/share/icons`
+* install and run `nwg-look` and change cursor under `Mouse cursor` tab
 * edit `/usr/share/icons/default/index.theme` to match cursor directory
 * create and edit `/home/USER/.icons/default/index.theme` to match cursor directory
 * don't change anything in `.gtkrc-2.0`, this file will be overwritten by nwg-look
 
 # TODO:
-* Create installation dependencies command
-* Add fonts to dependencies
 * Hyprland config
     * Cleanup hyprland config
     * Configure hyprland keybindings
@@ -51,7 +57,6 @@ More information:
     * Configure notifications to show only on main screen
 * Add rofi
 * Add media center
-* Add file manager
 * Add shut down, reboot etc. buttons
 * Wallpaper changer
     * Configure wallpaper changing in hyprpaper or change to othet app
@@ -60,7 +65,6 @@ More information:
     * Maybe use KeePassXC
 * Configure styles to be similar in all application ie. terminal background like waybar background etc.
 * Configure screen sharing
-* Add GTK theme
 * Add QT theme
 * Add ARCH update checker
 * force_default_wallpaper = 0
