@@ -15,7 +15,7 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 
 # Current dependencies:
 hyprland hyprpaper hyprlock xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp
-network-manager network-manager-applet
+network-manager network-manager-applet dnsutils dnsmasq
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
 kitty nemo keepassxc
 
@@ -55,7 +55,10 @@ More information:
 * Add notifications
     * Configure different notification daemon for KDE and hyprland
     * Configure notifications to show only on main screen
-* Add rofi
+* Configure rofi
+    * Configure rofi apps, extracting type and style etc.
+    * Configure rofi power menu, extracting type and style etc.
+        * fix lock etc.
 * Add media center
 * Add shut down, reboot etc. buttons
 * Wallpaper changer
@@ -68,6 +71,8 @@ More information:
 * Add QT theme
 * Add ARCH update checker
 * force_default_wallpaper = 0
+* Nemo
+    * Fix `Open with vim`
 
 # Credits and inspirations
 Configuration based and inspired on:
