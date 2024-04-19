@@ -14,10 +14,21 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 * Intellij flickering https://github.com/hyprwm/Hyprland/issues/3450 / https://github.com/hyprwm/Hyprland/issues/3450
 
 # Current dependencies:
+
+## Hyprland
 hyprland hyprpaper hyprlock xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp
+
+## Network
 network-manager network-manager-applet dnsutils dnsmasq
+
+## Theme
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
-kitty nemo keepassxc
+
+## Apps
+kitty nemo keepassxc code gnome-font-viewer yazi
+
+## Programming
+docker docker-compose postman git gitflow-avh nvm jdk11-openjdk jdk21-openjdk
 
 # Changing GTK themes:
 More information:
