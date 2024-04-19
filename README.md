@@ -58,18 +58,12 @@ More information:
     * Add monitor profiles 3 monitors / single monitor
     * Configure cursor
     * Configure Fonts
-* Add lock screen - hyprlock
-    * Add currently playing song in lock screen
-    * Stylize
+* Stylize lock screen
 * Add idle
     * hypridle
 * Add notifications
     * Configure different notification daemon for KDE and hyprland
     * Configure notifications to show only on main screen
-* Configure rofi
-    * Configure rofi apps, extracting type and style etc.
-    * Configure rofi power menu, extracting type and style etc.
-        * fix lock etc.
 * Add media center
 * Add shut down, reboot etc. buttons
 * Wallpaper changer
@@ -84,9 +78,12 @@ More information:
 * force_default_wallpaper = 0
 * Nemo
     * Fix `Open with vim`
+* Logitech Master MX 3s
+    * Configure keybinds
 
 # Credits and inspirations
 Configuration based and inspired on:
 * https://gitlab.com/stephan-raabe/dotfiles
 * https://gitlab.com/thelinuxcast/my-dots
 * https://github.com/justinmdickey/publicdots/tree/main
+* https://github.com/adi1090x/rofi
