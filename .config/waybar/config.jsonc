@@ -51,7 +51,8 @@
       "critical": 15
     },
     "format": "{icon} {capacity}%",
-    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰂄"]
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰂄"],
+    "on-click": "~/.config/rofi/powermenu.sh"
   },
   "tray": {
     "icon-size": 20,
