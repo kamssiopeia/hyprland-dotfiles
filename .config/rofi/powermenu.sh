@@ -48,7 +48,17 @@ run_rofi() {
 run_cmd() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
-		hyprctl dispatch exit
+		if [[ $1 == '--shutdown' ]]; then
+			systemctl poweroff
+		elif [[ $1 == '--reboot' ]]; then
+			systemctl reboot
+		elif [[ $1 == '--suspend' ]]; then
+			mpc -q pause
+			amixer set Master mute
+			systemctl suspend
+		elif [[ $1 == '--logout' ]]; then
+			hyprctl dispatch exit
+		fi
 	else
 		exit 0
 	fi
