@@ -1,6 +1,12 @@
 @define-color background #282A36;
 @define-color foreground #F8F8F2;
+@define-color cyan #8BE9FD;
+@define-color green #50FA7B;
+@define-color orange #FFB86C;
+@define-color pink #FF79C6;
 @define-color purple #BD93F9;
+@define-color red #FF5555;
+@define-color yellow #F1FA8C;
 
 * {
     border: none;
@@ -42,6 +48,7 @@ window#waybar.empty #window {
     border-radius: 10px;
 }
 
+/* WORKSPACES */
 #workspaces {
     padding-left: 4px;
     padding-right: 4px;
@@ -62,6 +69,7 @@ window#waybar.empty #window {
     color: @background;
 }
 
+/* CUSTOM-NOTIFICATION */
 #custom-notification {
     font-family: "NotoSans Nerd Font"
 }
