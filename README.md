@@ -16,7 +16,7 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 # Current dependencies:
 
 ## Hyprland
-hyprland hyprpaper hyprlock xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp
+hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp brightnessctl
 
 ## Network
 network-manager network-manager-applet dnsutils dnsmasq
@@ -59,8 +59,6 @@ More information:
     * Configure cursor
     * Configure Fonts
 * Stylize lock screen
-* Add idle
-    * hypridle
 * Add notifications
     * Configure different notification daemon for KDE and hyprland
     * Configure notifications to show only on main screen
