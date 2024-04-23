@@ -78,8 +78,11 @@ More information:
 * force_default_wallpaper = 0
 * Nemo
     * Fix `Open with vim`
+    * Add opacity to for example `select file` popups in imgur etc.
 * Logitech Master MX 3s
     * Configure keybinds
+* Powermenu
+    * Add umountall before shutting down
 
 # Credits and inspirations
 Configuration based and inspired on:
