@@ -29,8 +29,8 @@
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon} {volume}%{format_source}",
-    "format-muted": "  {volume}%{format_source}",
-    "format-source-muted": "  ",
+    "format-muted": "<span foreground='#FF5555'></span>  {volume}%{format_source}",
+    "format-source-muted": " <span foreground='#FF5555'></span> ",
     "format-icons": {
       "default": ["", " ", " "]
     },
@@ -59,13 +59,13 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span foreground='#EE4266'></span>",
+      "notification": "<span foreground='#8BE9FD'></span>",
       "none": "",
-      "dnd-notification": "<span foreground='#EE4266'></span>",
+      "dnd-notification": "<span foreground='#8BE9FD'></span>",
       "dnd-none": "",
-      "inhibited-notification": "<span foreground='#EE4266'></span>",
+      "inhibited-notification": "<span foreground='#8BE9FD'></span>",
       "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='#EE4266'></span>",
+      "dnd-inhibited-notification": "<span foreground='#8BE9FD'></span>",
       "dnd-inhibited-none": ""
     },
     "return-type": "json",
@@ -78,6 +78,7 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "",
+    "format-connected": "<span foreground='#8BE9FD'></span>",
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "Controller:\n{controller_alias}\t{controller_address}\n\nDevices connected {num_connections}:\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}\t{device_battery_percentage}% battery"
