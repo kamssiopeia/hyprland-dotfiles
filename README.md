@@ -16,7 +16,7 @@ https://wiki.hyprland.org/Useful-Utilities/Must-have/
 # Current dependencies:
 
 ## Hyprland
-hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp brightnessctl
+hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp brightnessctl pamixer
 
 ## Network
 network-manager network-manager-applet dnsutils dnsmasq
