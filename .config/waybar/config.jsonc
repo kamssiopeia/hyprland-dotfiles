@@ -11,6 +11,7 @@
   "modules-right": [
     "tray",
     "custom/notification",
+    "bluetooth",
     "pulseaudio",
     "battery",
     "clock"
@@ -73,5 +74,12 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
+  },
+  "bluetooth": {
+    "format": "",
+    "format-disabled": "",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "Controller:\n{controller_alias}\t{controller_address}\n\nDevices connected {num_connections}:\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}\t{device_battery_percentage}% battery"
   }
 }

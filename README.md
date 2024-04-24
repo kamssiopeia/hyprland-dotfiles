@@ -30,6 +30,9 @@ kitty nemo keepassxc code gnome-font-viewer yazi
 ## Programming
 docker docker-compose postman git gitflow-avh nvm jdk11-openjdk jdk21-openjdk
 
+## Bluetooth
+bluez bluez-utils
+
 # Changing GTK themes:
 More information:
 * https://wiki.archlinux.org/title/Cursor_themes 
