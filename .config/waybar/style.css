@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     font-family: "JetBrains Mono Nerd Font";
-    font-size: 17px;
+    font-size: 15px;
 }
 
 window#waybar {
@@ -59,9 +59,11 @@ window#waybar.empty #window {
     padding: 0 8px;
     color: @foreground;
     border-radius: 7px;
+    font-weight: bold;
 }
 
 #workspaces button:hover {
+    background: @background;
     color: @purple;
 }  
 
