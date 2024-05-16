@@ -67,13 +67,15 @@ window#waybar.empty #window {
 }
 
 #workspaces button {
-    padding-right: 5px;
+    padding: 0 3px;
     color: rgba(248, 248, 242, 0.6);
 }
 
 #workspaces button:hover {
     background: transparent;
     color: rgba(248, 248, 242, 1);
+    box-shadow: none;
+    text-shadow: none;
 }  
 
 #workspaces button.active {
