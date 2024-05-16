@@ -4,10 +4,13 @@
   "position": "top",
   "output": "DP-6",
   "height": 0,
-  "spacing": 5,
+  "spacing": 0,
+  "margin-left": 10,
+  "margin-right": 10,
+  "margin-top": 8,
   // Modules order
-  "modules-left": ["hyprland/workspaces", "custom/playerctl"],
-  "modules-center": ["hyprland/window"],
+  "modules-left": ["hyprland/window"],
+  "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
     "custom/notification",
@@ -21,10 +24,18 @@
     "all-outputs": true,
     "on-click": "activate",
     "disable-scroll": true,
-    "warp-on-scroll": false
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "active": ""
+    },
+    "sort-by-number": true
   },
   "hyprland/window": {
-    "format": "{}"
+    "format": "{class}",
+    "icon": true,
+    "icon-size": 20
   },
   "pulseaudio": {
     "scroll-step": 5,
@@ -42,8 +53,8 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{icon} {capacity}%",
-    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰂄"],
+    "format": "{icon}  {capacity}%",
+    "format-icons": ["", "", "", "", ""],
     "on-click": "~/.config/rofi/powermenu.sh"
   },
   "tray": {

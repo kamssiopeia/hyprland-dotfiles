@@ -19,19 +19,24 @@
 }
 
 window#waybar {
-    background: rgba(0,0,0,0);
+    background: rgba(40, 42, 54, 0.9);
+    border-radius: 10px;
 }
 
 window#waybar.empty #window {  
-    background:none;  
+    background: none;
 }
 
 .modules-left {
-    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.modules-center {
+    margin: 4px 0;
 }
 
 .modules-right {
-    margin-right: 10px;
+    padding-right: 10px;
 }
 
 #workspaces,
@@ -43,33 +48,36 @@ window#waybar.empty #window {
 #bluetooth,
 #clock {
     color: @foreground;
-    background: @background;
-    margin-top: 8px;
-    padding: 4px 10px;
-    border-radius: 10px;
+}
+
+#custom-notification,
+#bluetooth {
+    margin-left: 10px;
+}
+
+#clock,
+#battery,
+#pulseaudio {
+    margin-left: 25px;
 }
 
 /* WORKSPACES */
 #workspaces {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding: 0;
 }
 
 #workspaces button {
-    padding: 0 8px;
-    color: @foreground;
-    border-radius: 7px;
-    font-weight: bold;
+    padding-right: 5px;
+    color: rgba(248, 248, 242, 0.6);
 }
 
 #workspaces button:hover {
-    background: @background;
-    color: @purple;
+    background: transparent;
+    color: rgba(248, 248, 242, 1);
 }  
 
 #workspaces button.active {
-    background: @purple;
-    color: @background;
+    color: rgba(248, 248, 242, 1);
 }
 
 /* CUSTOM-NOTIFICATION */
