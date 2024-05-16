@@ -23,14 +23,12 @@
   "hyprland/workspaces": {
     "all-outputs": true,
     "on-click": "activate",
-    "disable-scroll": true,
-    "warp-on-scroll": false,
     "format": "{icon}",
     "format-icons": {
-      "default": "",
-      "active": ""
+      "default": "󰊠",
+      "active": "󰮯"
     },
-    "sort-by-number": true
+    "sort-by": "id"
   },
   "hyprland/window": {
     "format": "{class}",
