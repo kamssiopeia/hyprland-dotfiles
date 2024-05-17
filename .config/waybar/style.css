@@ -28,16 +28,10 @@ window#waybar.empty #window {
     background: none;
 }
 
-.modules-left {
-    padding-left: 10px;
-}
-
-.modules-center {
-    margin: 4px 0;
-}
-
+.modules-left,
+.modules-center,
 .modules-right {
-    padding-right: 10px;
+    padding: 4px 10px;
 }
 
 #workspaces,
@@ -63,10 +57,6 @@ window#waybar.empty #window {
 }
 
 /* WORKSPACES */
-#workspaces {
-    padding: 0;
-}
-
 #workspaces button {
     padding: 0 3px;
     color: @foreground-opaque;
