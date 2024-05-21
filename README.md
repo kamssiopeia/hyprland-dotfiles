@@ -84,6 +84,13 @@ More information:
     * Configure keybinds
 * Powermenu
     * Add umountall before shutting down
+* Create suspend script and use it in hypridle and powermenu
+    * Pause all players
+    * Mute microphone / unmute after suspend
+* Add colors for muted audio and microphone
+* Add notifications for laptop shortcut actions
+* Checkout flameshot
+* Create workspaces for spotify / discord + telegram
 
 # Credits and inspirations
 Configuration based and inspired on:
@@ -91,3 +98,4 @@ Configuration based and inspired on:
 * https://gitlab.com/thelinuxcast/my-dots
 * https://github.com/justinmdickey/publicdots/tree/main
 * https://github.com/adi1090x/rofi
+* https://github.com/zDyanTB/HyprNova
