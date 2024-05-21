@@ -25,7 +25,7 @@ network-manager network-manager-applet dnsutils dnsmasq
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
 
 ## Apps
-kitty nemo keepassxc code gnome-font-viewer yazi
+kitty nemo nemo-fileroller keepassxc code gnome-font-viewer yazi
 
 ## Programming
 docker docker-compose postman git gitflow-avh nvm jdk11-openjdk jdk21-openjdk
