@@ -1,12 +1,13 @@
-@define-color background #282A36;
-@define-color foreground #F8F8F2;
-@define-color cyan #8BE9FD;
-@define-color green #50FA7B;
-@define-color orange #FFB86C;
-@define-color pink #FF79C6;
-@define-color purple #BD93F9;
-@define-color red #FF5555;
-@define-color yellow #F1FA8C;
+@define-color background RGB(40, 42, 54);
+@define-color foreground RGB(248, 248, 242);
+@define-color foreground-opaque RGBA(248, 248, 242, .6);
+@define-color cyan RGB(139, 233, 253);
+@define-color green RGB(80, 250, 123);
+@define-color orange RGB(255, 184, 108);
+@define-color pink RGB(255, 121, 198);
+@define-color purple RGB(189, 147, 249);
+@define-color red RGB(255, 85, 85);
+@define-color yellow RGB(241, 250, 140);
 
 * {
     border: none;
@@ -19,19 +20,18 @@
 }
 
 window#waybar {
-    background: rgba(0,0,0,0);
+    background: @background;
+    border-radius: 10px;
 }
 
 window#waybar.empty #window {  
-    background:none;  
+    background: none;
 }
 
-.modules-left {
-    margin-left: 10px;
-}
-
+.modules-left,
+.modules-center,
 .modules-right {
-    margin-right: 10px;
+    padding: 4px 10px;
 }
 
 #workspaces,
@@ -43,33 +43,34 @@ window#waybar.empty #window {
 #bluetooth,
 #clock {
     color: @foreground;
-    background: @background;
-    margin-top: 8px;
-    padding: 4px 10px;
-    border-radius: 10px;
+}
+
+#custom-notification,
+#bluetooth {
+    margin-left: 10px;
+}
+
+#clock,
+#battery,
+#pulseaudio {
+    margin-left: 25px;
 }
 
 /* WORKSPACES */
-#workspaces {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
 #workspaces button {
-    padding: 0 8px;
-    color: @foreground;
-    border-radius: 7px;
-    font-weight: bold;
+    padding: 0 3px;
+    color: @foreground-opaque;
 }
 
 #workspaces button:hover {
-    background: @background;
-    color: @purple;
+    background: transparent;
+    color: @foreground;
+    box-shadow: none;
+    text-shadow: none;
 }  
 
 #workspaces button.active {
-    background: @purple;
-    color: @background;
+    color: @foreground;
 }
 
 /* CUSTOM-NOTIFICATION */
