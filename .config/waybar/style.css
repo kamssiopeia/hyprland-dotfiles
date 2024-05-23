@@ -1,6 +1,5 @@
 @define-color background RGB(40, 42, 54);
 @define-color foreground RGB(248, 248, 242);
-@define-color foreground-opaque RGBA(248, 248, 242, .6);
 @define-color cyan RGB(139, 233, 253);
 @define-color green RGB(80, 250, 123);
 @define-color orange RGB(255, 184, 108);
@@ -59,7 +58,7 @@ window#waybar.empty #window {
 /* WORKSPACES */
 #workspaces button {
     padding: 0 3px;
-    color: @foreground-opaque;
+    color: alpha(@foreground, 0.6);
 }
 
 #workspaces button:hover {
