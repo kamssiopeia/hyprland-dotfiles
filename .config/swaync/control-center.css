@@ -1,0 +1,200 @@
+@define-color background RGB(40, 42, 54);
+@define-color foreground RGB(248, 248, 242);
+@define-color current-line RGB(68, 71, 90);
+@define-color comment RGB(98, 114, 164);
+@define-color cyan RGB(139, 233, 253);
+@define-color green RGB(80, 250, 123);
+@define-color orange RGB(255, 184, 108);
+@define-color pink RGB(255, 121, 198);
+@define-color purple RGB(189, 147, 249);
+@define-color red RGB(255, 85, 85);
+@define-color yellow RGB(241, 250, 140);
+
+* {
+    color: @foreground;
+
+    all: unset;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 15px;
+}
+
+.control-center {
+    background: alpha(@background, .95);
+    box-shadow: 0 0 8px 0 rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 5px;
+}
+
+/* ## NOTIFICATIONS ## */
+.control-center .notification-row .notification-background {
+    background: @current-line;
+    border-radius: 15px;
+    margin: 5px 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.control-center .notification-row .notification-background .notification.critical {
+    border: 1px solid @red;
+}
+
+.control-center .notification-row .notification-background .notification .notification-content {
+    margin: 10px;
+}
+
+.control-center .notification-row .notification-background .close-button {
+    margin: 6px;
+    padding: 2px;
+    border-radius: 6px;
+    color: alpha(@foreground, 0.6);
+}
+
+.control-center .notification-row .notification-background .close-button:hover {
+    color: @foreground;
+}
+
+.control-center .notification-row .notification-background .close-button:active {
+    color: @orange;
+}
+
+progressbar,
+progress,
+trough {
+    border-radius: 12px;
+}
+
+progressbar {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+/* ## NOTIFICATIONS EXPANDED GROUP ## */
+.notification-group-headers {
+    margin: 5px 10px;
+    font-weight: bold;
+    color: @foreground;
+}
+
+.notification-group-icon {
+    color: @foreground;
+}
+
+.notification-group-close-all-button {
+    margin-right: 10px;
+}
+
+.notification-group-collapse-button,
+.notification-group-close-all-button {
+    background: @current-line;
+    color: @foreground;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.notification-group-collapse-button:hover,
+.notification-group-close-all-button:hover {
+    background: @orange;
+}
+
+/* ## WIDGETS ## */
+.widget-title,
+.widget-dnd,
+.widget-buttons-grid,
+.widget-mpris {
+    margin: 10px;
+}
+
+.widget-title,
+.widget-dnd {
+    font-size: 1.2em;
+}
+
+.widget-title button:hover,
+.widget-dnd>switch:hover,
+.widget-dnd>switch:checked:hover {
+    background-color: @orange;
+}
+
+.widget-title button:active,
+.widget-dnd>switch:checked {
+    background: @comment;
+}
+
+/* ## NOTIFICATION CLEAR ## */
+.widget-title button {
+    background: @current-line;
+    border-radius: 6px;
+    padding: 2px 5px;
+}
+
+/* ## DND ## */
+.widget-dnd>switch {
+    background: @current-line;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.widget-dnd>switch slider {
+    background: @foreground;
+    border-radius: 6px;
+}
+
+/* ## BUTTONS MENU ## */
+.widget-buttons-grid {
+    font-size: x-large;
+    padding: 6px 2px;
+    border-radius: 12px;
+    background: @current-line;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button {
+    margin: 5px 25px;
+    padding: 5px 40px;
+    background: transparent;
+    border-radius: 8px;
+}
+
+.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+    background: @orange;
+}
+
+
+/* Music player */
+.widget-mpris {
+    background: @current-line;
+    border-radius: 16px;
+    color: @foreground;
+}
+
+.widget-mpris-player {
+    background-color: transparent;
+    border-radius: 22px;
+    padding: 6px 14px;
+    margin: 6px;
+}
+
+.widget-mpris>box>button {
+    color: @foreground;
+    border-radius: 20px;
+}
+
+.widget-mpris button {
+    color: alpha(@foreground, .6);
+}
+
+.widget-mpris button:hover {
+    color: @foreground;
+}
+
+.widget-mpris-album-art {
+    border-radius: 16px;
+}
+
+.widget-mpris-title {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.widget-mpris-subtitle {
+    font-weight: 500;
+    font-size: 0.8rem;
+}

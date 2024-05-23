@@ -1,0 +1,73 @@
+@define-color background RGB(40, 42, 54);
+@define-color foreground RGB(248, 248, 242);
+@define-color cyan RGB(139, 233, 253);
+@define-color green RGB(80, 250, 123);
+@define-color orange RGB(255, 184, 108);
+@define-color pink RGB(255, 121, 198);
+@define-color purple RGB(189, 147, 249);
+@define-color red RGB(255, 85, 85);
+@define-color yellow RGB(241, 250, 140);
+
+* {
+    color: @foreground;
+
+    all: unset;
+    font-family: "JetBrains Mono Nerd Font";
+    font-size: 15px;
+}
+
+.notification-row {
+    outline: none;
+    padding: 0;
+}
+
+.image {
+    margin-right: 5px;
+}
+
+.summary {
+    font-weight: bold;
+}
+
+.body {
+    font-size: 13px;
+}
+
+.floating-notifications.background .notification-row .notification-background {
+    background: alpha(@background, .95);
+    box-shadow: 0 0 8px 0 rgba(255, 255, 255, .2);
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification.critical {
+    border: 1px solid @red;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification .notification-content {
+    margin: 10px;
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button {
+    margin: 6px;
+    padding: 2px;
+    border-radius: 6px;
+    color: alpha(@foreground, 0.6);
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button:hover {
+    color: @foreground;
+}
+
+.floating-notifications.background .notification-row .notification-background .close-button:active {
+    color: @orange;
+}
+
+.notification.critical progress {
+    background-color: @purple;
+}
+
+.notification.low progress,
+.notification.normal progress {
+    background-color: @purple;
+}

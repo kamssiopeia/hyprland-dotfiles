@@ -1,18 +1,16 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
-
   "positionX": "right",
   "positionY": "top",
   "control-center-positionX": "none",
   "control-center-positionY": "none",
-  "control-center-margin-top": 8,
-  "control-center-margin-bottom": 8,
-  "control-center-margin-right": 8,
-  "control-center-margin-left": 8,
+  "control-center-margin-top": 0,
+  "control-center-margin-bottom": 0,
+  "control-center-margin-right": 0,
+  "control-center-margin-left": 0,
   "control-center-width": 500,
-  "control-center-height": 600,
+  "control-center-height": 700,
   "fit-to-screen": false,
-
   "layer": "overlay",
   "control-center-layer": "overlay",
   "cssPriority": "user",
@@ -30,29 +28,41 @@
   "hide-on-clear": true,
   "hide-on-action": true,
   "script-fail-notify": true,
-
-  "widgets": ["inhibitors", "title", "dnd", "mpris", "notifications"],
+  "widgets": [
+    "buttons-grid",
+    "mpris",
+    "title",
+    "dnd",
+    "notifications"
+  ],
   "widget-config": {
-    "inhibitors": {
-      "text": "Inhibitors",
-      "button-text": "Clear All",
-      "clear-all-button": true
-    },
     "title": {
       "text": "Notifications",
-      "clear-all-button": false,
-      "button-text": "Clear All"
+      "clear-all-button": true,
+      "button-text": "Clear all"
     },
     "dnd": {
-      "text": "Do Not Disturb"
-    },
-    "label": {
-      "max-lines": 5,
-      "text": "Label Text"
+      "text": "Do not disturb"
     },
     "mpris": {
       "image-size": 96,
       "image-radius": 12
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "󰕾",
+          "command": "pamixer -t"
+        },
+        {
+          "label": "",
+          "command": "pamixer --default-source -t"
+        },
+        {
+          "label": "󰖩",
+          "command": "nm-connection-editor"
+        }
+      ]
     }
   }
 }
