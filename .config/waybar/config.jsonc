@@ -38,7 +38,7 @@
   "pulseaudio": {
     "scroll-step": 5,
     "format": "{icon} {volume}%{format_source}",
-    "format-muted": "<span foreground='#FF5555'></span>  {volume}%{format_source}",
+    "format-muted": "<span foreground='#FF5555'></span>  {format_source}",
     "format-source-muted": " <span foreground='#FF5555'></span> ",
     "format-icons": {
       "default": ["", " ", " "]
