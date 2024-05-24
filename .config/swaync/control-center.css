@@ -158,16 +158,16 @@ progressbar {
 }
 
 
-/* Music player */
+/* ## MUSIC PLAYER ## */
 .widget-mpris {
     background: @current-line;
-    border-radius: 16px;
+    border-radius: 12px;
     color: @foreground;
 }
 
 .widget-mpris-player {
     background-color: transparent;
-    border-radius: 22px;
+    border-radius: 12px;
     padding: 6px 14px;
     margin: 6px;
 }
