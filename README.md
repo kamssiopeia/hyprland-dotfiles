@@ -73,7 +73,6 @@ More information:
 * Password between VMs - https://wiki.archlinux.org/title/Chromium#Force_a_password_store
     * Maybe use KeePassXC
 * Configure styles to be similar in all application ie. terminal background like waybar background etc.
-* Configure screen sharing
 * Add QT theme
 * Add ARCH update checker
 * force_default_wallpaper = 0
@@ -87,7 +86,6 @@ More information:
 * Create suspend script and use it in hypridle and powermenu
     * Pause all players
     * Mute microphone / unmute after suspend
-* Add colors for muted audio and microphone
 * Add notifications for laptop shortcut actions
 * Checkout flameshot
 * Create workspaces for spotify / discord + telegram
