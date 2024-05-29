@@ -53,6 +53,14 @@ More information:
 * create and edit `/home/USER/.icons/default/index.theme` to match cursor directory
 * don't change anything in `.gtkrc-2.0`, this file will be overwritten by nwg-look
 
+# Bug fixes and configurations
+
+## Nemo open with doesn't work
+* go to `/usr/share/applications`
+* find `.desktop` file for application of choice
+* edit exec ie. for vim change `Exec=vim %F` to `Exec=kitty -e vim %F`
+* change `terminal` flag to `false`
+
 # TODO:
 * Hyprland config
     * Cleanup hyprland config
