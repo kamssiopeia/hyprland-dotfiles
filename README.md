@@ -33,6 +33,9 @@ docker docker-compose postman git gitflow-avh nvm jdk11-openjdk jdk21-openjdk
 ## Bluetooth
 bluez bluez-utils
 
+## Peripherals
+solaar
+
 # Changing GTK themes:
 More information:
 * https://wiki.archlinux.org/title/Cursor_themes 
@@ -60,6 +63,11 @@ More information:
 * find `.desktop` file for application of choice
 * edit exec ie. for vim change `Exec=vim %F` to `Exec=kitty -e vim %F`
 * change `terminal` flag to `false`
+
+## Fixing inconsistent scrolling on Logitech MX Master 3s
+When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls more and sometimes less pixels making scrolling inconsistent
+* To test use https://cpstest.org/scroll-test.php
+* To fix follow archlinux wiki guide https://wiki.archlinux.org/title/Logitech_MX_Master#Missing_scroll_events_on_MX_Master_3
 
 # TODO:
 * Hyprland config
