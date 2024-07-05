@@ -61,6 +61,7 @@ More information:
 ## Nemo open with doesn't work
 * go to `/usr/share/applications`
 * find `.desktop` file for application of choice
+* copy `.desktop` file to `~/.local/share/applications`
 * edit exec ie. for vim change `Exec=vim %F` to `Exec=kitty -e vim %F`
 * change `terminal` flag to `false`
 
