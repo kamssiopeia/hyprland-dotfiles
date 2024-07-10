@@ -104,10 +104,10 @@ When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls m
 * Checkout flameshot
 * Create workspaces for spotify / discord + telegram
 * Add pywall support
+    * try pywal that generates 16 colors
     * Change colors in vscode
-    * Change colors in rofi
     * Change colors in nemo
-    * Change colors in hyprland
+    * Figure out inactive border color, change active border colors to be clearly visible
     * When starting PC hyprland should load recently loaded wallpaper and apply its colors
     * Study other repos ie https://github.com/rchrdwllm/dotfiles
 
