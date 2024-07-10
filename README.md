@@ -93,9 +93,6 @@ When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls m
 * Add QT theme
 * Add ARCH update checker
 * force_default_wallpaper = 0
-* Nemo
-    * Fix `Open with vim`
-    * Add opacity to for example `select file` popups in imgur etc.
 * Logitech Master MX 3s
     * Configure keybinds
 * Powermenu
