@@ -2,7 +2,7 @@
 * {
     font: "JetBrains Mono Nerd Font 10";
 }
-@import "../colors/dracula.rasi"
+@import "/home/kamgol/.cache/wal/colors-rofi.rasi"
 
 /*****----- Configuration -----*****/
 configuration {
