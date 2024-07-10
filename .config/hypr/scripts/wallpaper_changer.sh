@@ -24,9 +24,3 @@ esac
 hyprctl hyprpaper preload "$wallpaper_path"
 hyprctl hyprpaper wallpaper ",$wallpaper_path"
 echo "Changed wallpaper"
-
-wal -n -s -i "$wallpaper_path"
-echo "Generated color palette"
-
-killall -SIGUSR2 waybar
-echo "Reloaded waybar"

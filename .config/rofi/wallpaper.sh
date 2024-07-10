@@ -1,23 +1,24 @@
 #!/bin/bash
 
-theme="$HOME/.config/rofi/launcher/style"
+rofi_theme="$HOME/.config/rofi/launcher/style"
 
-wallpapers=$HOME/Wallpapers
-image="$(ls $wallpapers | sort | rofi -dmenu -i -p " " -theme ${theme})"
-wallpaper=$wallpapers/$image
+wallpapers_dir=$HOME/Wallpapers
+selected_wallpaper="$(ls $wallpapers_dir | sort | rofi -dmenu -i -p " " -theme ${rofi_theme})"
+selected_wallpaper_path=$wallpapers_dir/$selected_wallpaper
 
-if [[ $image == "" ]]; then
+if [[ $selected_wallpaper_path == "" ]]; then
     exit 1
 fi
 
-if [[ -f $wallpaper ]]; then
-    echo "$wallpaper selected"
-elif [[ -d $wallpaper ]]; then
-    echo "$wallpaper is a directory"
+if [[ -f $selected_wallpaper_path ]]; then
+    echo "$selected_wallpaper_path selected"
+elif [[ -d $selected_wallpaper_path ]]; then
+    echo "$selected_wallpaper_path is a directory"
     exit 1
 else
-    echo "$wallpaper is not valid"
+    echo "$selected_wallpaper_path is not valid"
     exit 1
 fi
 
-sh $HOME/.config/hypr/scripts/wallpaper_changer.sh $wallpaper
+sh $HOME/.config/hypr/scripts/wallpaper_changer.sh $selected_wallpaper_path
+sh $HOME/.config/hypr/scripts/pywal_wrapper.sh -g $selected_wallpaper_path
