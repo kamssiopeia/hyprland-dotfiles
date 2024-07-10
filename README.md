@@ -108,6 +108,7 @@ When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls m
     * Change colors in rofi
     * Change colors in nemo
     * When starting PC hyprland should load recently loaded wallpaper and apply its colors
+    * Study other repos ie https://github.com/rchrdwllm/dotfiles
 
 # Credits and inspirations
 Configuration based and inspired on:
