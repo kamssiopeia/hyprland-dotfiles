@@ -20,12 +20,4 @@ else
     exit 1
 fi
 
-hyprctl hyprpaper preload "$wallpaper"
-hyprctl hyprpaper wallpaper ",$wallpaper"
-echo "Changed wallpaper"
-
-wal -n -s -i "$wallpaper"
-echo "Generated color palette"
-
-killall -SIGUSR2 waybar
-echo "Reloaded waybar"
+sh $HOME/.config/hypr/scripts/wallpaper_changer.sh $wallpaper
