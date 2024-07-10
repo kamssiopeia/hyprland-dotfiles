@@ -110,6 +110,7 @@ When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls m
     * Figure out inactive border color, change active border colors to be clearly visible
     * When starting PC hyprland should load recently loaded wallpaper and apply its colors
     * Study other repos ie https://github.com/rchrdwllm/dotfiles
+    * Add pywall documentation
 
 # Credits and inspirations
 Configuration based and inspired on:
