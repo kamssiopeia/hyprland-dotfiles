@@ -17,5 +17,8 @@ echo "Generated color palette"
 walogram -s -B
 echo "Generated telegram palette"
 
+killall -SIGUSR1 kitty
+echo "Reloaded kitty"
+
 killall -SIGUSR2 waybar
 echo "Reloaded waybar"
