@@ -8,7 +8,7 @@ fi
 while getopts g:t: flag
 do
     case "${flag}" in
-        g) wal -n -s -i ${OPTARG};;
+        g) wal -n -s --cols16 lighten -i ${OPTARG};;
         t) wal -n -s --theme ${OPTARG};;
     esac
 done

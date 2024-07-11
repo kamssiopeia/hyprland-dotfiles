@@ -22,7 +22,10 @@ hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprl
 network-manager network-manager-applet dnsutils dnsmasq
 
 ## Theme
-papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula python-pywal walogram-git
+papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
+
+### Pywal theming
+pywal-16-colors walogram-git
 
 ## Apps
 kitty nemo nemo-fileroller keepassxc code gnome-font-viewer yazi
