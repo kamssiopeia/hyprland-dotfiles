@@ -1,8 +1,13 @@
 #!/bin/bash
-
-ROFI_THEME=$HOME/.config/rofi/wallpaper/style
 CACHE_DIR=$HOME/.cache/rofi_wallpaper_picker
 WALLPAPERS_DIR=$HOME/Wallpapers
+
+rofi_cmd() {
+	rofi -dmenu \
+		-i \
+		-p "Select wallpaper to change" \
+		-theme $HOME/.config/rofi/wallpaper/style
+}
 
 if [ ! -d "${CACHE_DIR}" ] ; then
     mkdir -p "${CACHE_DIR}"
@@ -17,7 +22,7 @@ for wallpaper in "$WALLPAPERS_DIR"/*.{jpg,jpeg,png,webp}; do
     fi
 done
 
-selected_wallpaper=$(find "${WALLPAPERS_DIR}" -type f -printf "%P\n" | sort | while read -r A ; do echo -en "$A\x00icon\x1f""${CACHE_DIR}"/"$A\n" ; done | rofi -dmenu -i -p " " -theme ${ROFI_THEME})
+selected_wallpaper=$(find "${WALLPAPERS_DIR}" -type f -printf "%P\n" | sort | while read -r A ; do echo -en "$A\x00icon\x1f""${CACHE_DIR}"/"$A\n" ; done | rofi_cmd)
 
 if [[ $selected_wallpaper == "" ]]; then
     exit 1
