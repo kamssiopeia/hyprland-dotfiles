@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROFI_THEME=$HOME/.config/rofi/launcher/style
+ROFI_THEME=$HOME/.config/rofi/wallpaper/style
 CACHE_DIR=$HOME/.cache/rofi_wallpaper_picker
 WALLPAPERS_DIR=$HOME/Wallpapers
 
