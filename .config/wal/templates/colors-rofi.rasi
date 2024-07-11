@@ -1,8 +1,8 @@
 * {{
     background:     {background};
-    background-alt: {color8};
+    background-alt: {foreground}15;
     foreground:     {foreground};
-    selected:       {color4};
-    active:         {color2};
-    urgent:         {color1};
+    selected:       {color6};
+    active:         {color5};
+    urgent:         {color4};
 }}
