@@ -22,7 +22,7 @@ hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprl
 network-manager network-manager-applet dnsutils dnsmasq
 
 ## Theme
-papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
+papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula python-pywal walogram-git
 
 ## Apps
 kitty nemo nemo-fileroller keepassxc code gnome-font-viewer yazi
@@ -35,6 +35,12 @@ bluez bluez-utils
 
 ## Peripherals
 solaar
+
+# Pywal
+
+## Telegram
+Walogram is used to generate theme https://codeberg.org/thirtysixpw/walogram. After generating first theme, remember to change theme in telegram following walogram doc https://codeberg.org/thirtysixpw/walogram#applying-theme
+
 
 # Changing GTK themes:
 More information:

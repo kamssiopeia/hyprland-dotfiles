@@ -14,5 +14,8 @@ do
 done
 echo "Generated color palette"
 
+walogram -s -B
+echo "Generated telegram palette"
+
 killall -SIGUSR2 waybar
 echo "Reloaded waybar"
