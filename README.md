@@ -1,3 +1,8 @@
+# Screenshots
+![](Dots_showcase/main.jpg)
+![](Dots_showcase/launcher.jpg)
+![](Dots_showcase/wallpaper_picker.jpg)
+
 # Bare repo
 Bare repo created using https://www.atlassian.com/git/tutorials/dotfiles
 
