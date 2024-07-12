@@ -1,6 +1,11 @@
 # Screenshots
+### Preview
 ![](Dots_showcase/main.jpg)
+
+### App launcher
 ![](Dots_showcase/launcher.jpg)
+
+### Wallpaper picker
 ![](Dots_showcase/wallpaper_picker.jpg)
 
 # Bare repo
@@ -8,15 +13,6 @@ Bare repo created using https://www.atlassian.com/git/tutorials/dotfiles
 
 # Hyprland
 https://wiki.hyprland.org/Useful-Utilities/Must-have/
-
-# References
-* https://gitlab.com/stephan-raabe/dotfiles
-* https://gitlab.com/thelinuxcast/my-dots
-* https://github.com/zDyanTB/HyprNova
-* https://github.com/justinmdickey/publicdots/tree/main
-* https://www.reddit.com/r/hyprland/comments/1bhbypf/hypridle_hyprlock/
-* https://colorhunt.co/palette/7f27ff9f70fdfdbf60ff8911
-* Intellij flickering https://github.com/hyprwm/Hyprland/issues/3450 / https://github.com/hyprwm/Hyprland/issues/3450
 
 # Current dependencies:
 
@@ -73,43 +69,18 @@ More information:
 * create and edit `/home/USER/.icons/default/index.theme` to match cursor directory
 * don't change anything in `.gtkrc-2.0`, this file will be overwritten by nwg-look
 
-# Bug fixes and configurations
-
-## Nemo open with doesn't work
-* go to `/usr/share/applications`
-* find `.desktop` file for application of choice
-* copy `.desktop` file to `~/.local/share/applications`
-* edit exec ie. for vim change `Exec=vim %F` to `Exec=kitty -e vim %F`
-* change `terminal` flag to `false`
-
-## Fixing inconsistent scrolling on Logitech MX Master 3s
-When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls more and sometimes less pixels making scrolling inconsistent
-* To test use https://cpstest.org/scroll-test.php
-* To fix follow archlinux wiki guide https://wiki.archlinux.org/title/Logitech_MX_Master#Missing_scroll_events_on_MX_Master_3
-
 # TODO:
 * Hyprland config
     * Cleanup hyprland config
-    * Configure hyprland keybindings
     * Split config into files
     * Add monitor profiles 3 monitors / single monitor
-    * Configure cursor
-    * Configure Fonts
-* Stylize lock screen
-* Add notifications
-    * Configure different notification daemon for KDE and hyprland
+* Notifications
     * Configure notifications to show only on main screen
+    * Notifications for laptop shortcut actions
 * Add media center
-* Add shut down, reboot etc. buttons
-* Wallpaper changer
-    * Configure wallpaper changing in hyprpaper or change to othet app
 * Virtual desktopesque workspaces - https://github.com/levnikmyskin/hyprland-virtual-desktops
-* Password between VMs - https://wiki.archlinux.org/title/Chromium#Force_a_password_store
-    * Maybe use KeePassXC
-* Configure styles to be similar in all application ie. terminal background like waybar background etc.
 * Add QT theme
 * Add ARCH update checker
-* force_default_wallpaper = 0
 * Logitech Master MX 3s
     * Configure keybinds
 * Powermenu
@@ -117,20 +88,18 @@ When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls m
 * Create suspend script and use it in hypridle and powermenu
     * Pause all players
     * Mute microphone / unmute after suspend
-* Add notifications for laptop shortcut actions
 * Checkout flameshot
 * Create workspaces for spotify / discord + telegram
 * Add pywall support
     * Change colors in nemo
-    * Figure out inactive border color, change active border colors to be clearly visible
-    * Add pywall documentation
-    * Improve vscode colors
-
-# Credits and inspirations
-Configuration based and inspired on:
-* https://gitlab.com/stephan-raabe/dotfiles
-* https://gitlab.com/thelinuxcast/my-dots
-* https://github.com/justinmdickey/publicdots/tree/main
-* https://github.com/adi1090x/rofi
-* https://github.com/zDyanTB/HyprNova
-* https://github.com/rchrdwllm/dotfiles
+    * Figure out inactive border color, change active border colors to be clearly visible (Hyprland)
+    * Improve vscode colors (some are very hard to read)
+* Rofi theme switcher
+    * Stylize theme switcher - simple list with search bar
+    * Add apply current wallpaper theme entry
+* Rofi window / workspace switcher
+    * Try to make it work like windows / kde alt + tab (holding alt to display etc.)
+    * Try to implement secondary switcher for windows of current window type (if chrome is active, cycle between chrome instances etc.)
+    * It should cycle like windows alt + tab, so recent windows should be at the top
+* Hyprpaper
+    * Make it use current wallpaper and current theme colors
