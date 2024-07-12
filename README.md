@@ -44,6 +44,9 @@ solaar
 ## Telegram
 Walogram is used to generate theme https://codeberg.org/thirtysixpw/walogram. After generating first theme, remember to change theme in telegram following walogram doc https://codeberg.org/thirtysixpw/walogram#applying-theme
 
+## Vscode
+Install https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme vscode extension
+
 
 # Changing GTK themes:
 More information:
@@ -113,13 +116,13 @@ When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls m
 * Checkout flameshot
 * Create workspaces for spotify / discord + telegram
 * Add pywall support
-    * try pywal that generates 16 colors
     * Change colors in vscode
     * Change colors in nemo
     * Figure out inactive border color, change active border colors to be clearly visible
     * When starting PC hyprland should load recently loaded wallpaper and apply its colors
     * Study other repos ie https://github.com/rchrdwllm/dotfiles
     * Add pywall documentation
+    * Improve vscode colors
 
 # Credits and inspirations
 Configuration based and inspired on:
