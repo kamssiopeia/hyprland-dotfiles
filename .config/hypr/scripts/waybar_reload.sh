@@ -1,5 +1,4 @@
 #!/bin/bash
 
 killall waybar
-waybar &
-
+waybar & disown

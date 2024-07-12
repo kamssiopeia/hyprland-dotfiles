@@ -1,3 +1,8 @@
+# Screenshots
+![](Dots_showcase/main.jpg)
+![](Dots_showcase/launcher.jpg)
+![](Dots_showcase/wallpaper_picker.jpg)
+
 # Bare repo
 Bare repo created using https://www.atlassian.com/git/tutorials/dotfiles
 
@@ -24,6 +29,9 @@ network-manager network-manager-applet dnsutils dnsmasq
 ## Theme
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
 
+### Pywal theming
+pywal-16-colors walogram-git
+
 ## Apps
 kitty nemo nemo-fileroller keepassxc code gnome-font-viewer yazi
 
@@ -35,6 +43,15 @@ bluez bluez-utils
 
 ## Peripherals
 solaar
+
+# Pywal
+
+## Telegram
+Walogram is used to generate theme https://codeberg.org/thirtysixpw/walogram. After generating first theme, remember to change theme in telegram following walogram doc https://codeberg.org/thirtysixpw/walogram#applying-theme
+
+## Vscode
+Install https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme vscode extension
+
 
 # Changing GTK themes:
 More information:
@@ -103,6 +120,11 @@ When using MX Master 3s in ratchet mode, scrolling by 1 step sometimes scrolls m
 * Add notifications for laptop shortcut actions
 * Checkout flameshot
 * Create workspaces for spotify / discord + telegram
+* Add pywall support
+    * Change colors in nemo
+    * Figure out inactive border color, change active border colors to be clearly visible
+    * Add pywall documentation
+    * Improve vscode colors
 
 # Credits and inspirations
 Configuration based and inspired on:
@@ -111,3 +133,4 @@ Configuration based and inspired on:
 * https://github.com/justinmdickey/publicdots/tree/main
 * https://github.com/adi1090x/rofi
 * https://github.com/zDyanTB/HyprNova
+* https://github.com/rchrdwllm/dotfiles

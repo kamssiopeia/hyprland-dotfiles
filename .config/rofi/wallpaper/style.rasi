@@ -6,10 +6,7 @@
 
 /*****----- Configuration -----*****/
 configuration {
-	modi:                       "drun";
     show-icons:                 true;
-    display-drun:               " ";
-	drun-display-format:        "{name}";
 }
 
 /*****----- Main Window -----*****/
@@ -18,7 +15,7 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       700px;
+    width:                       900px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -48,37 +45,23 @@ mainbox {
 /*****----- Inputbar -----*****/
 inputbar {
     enabled:                     true;
-    spacing:                     10px;
-    margin:                      0px;
-    padding:                     15px;
-    border:                      0px solid;
-    border-radius:               12px;
-    border-color:                @selected;
-    background-color:            #7facc815;
+    padding:                     10px 0px;
+    background-color:            transparent;
     text-color:                  @foreground;
-    children:                    [ "prompt", "entry" ];
+    children:                    [ "prompt" ];
 }
 
 prompt {
     enabled:                     true;
-    background-color:            transparent;
+    background-color:            inherit;
     text-color:                  inherit;
-}
-
-entry {
-    enabled:                     true;
-    background-color:            transparent;
-    text-color:                  inherit;
-    cursor:                      text;
-    placeholder:                 "Search...";
-    placeholder-color:           inherit;
 }
 
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
-    lines:                       8;
+    columns:                     4;
+    lines:                       3;
     cycle:                       true;
     dynamic:                     true;
     scrollbar:                   false;
@@ -96,6 +79,7 @@ listview {
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      "default";
+
 }
 scrollbar {
     handle-width:                5px ;
@@ -107,52 +91,40 @@ scrollbar {
 /*****----- Elements -----*****/
 element {
     enabled:                     true;
-    spacing:                     10px;
+    spacing:                     0px;
     margin:                      0px;
-    padding:                     5px;
+    padding:                     0px;
     border:                      0px solid;
     border-radius:               12px;
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      pointer;
+    orientation:                 vertical;
 }
+
 element normal.normal {
     background-color:            @background;
     text-color:                  @foreground;
 }
+
 element selected.normal {
     background-color:            @selected;
     text-color:                  @background;
 }
+
 element-icon {
     background-color:            transparent;
-    text-color:                  inherit;
-    size:                        32px;
+    size:                        160px;
     cursor:                      inherit;
 }
+
 element-text {
+    enabled:                     false;
     background-color:            transparent;
     text-color:                  inherit;
     highlight:                   inherit;
     cursor:                      inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
-}
-
-/*****----- Message -----*****/
-error-message {
-    padding:                     15px;
-    border:                      2px solid;
-    border-radius:               12px;
-    border-color:                @selected;
-    background-color:            @background;
-    text-color:                  @foreground;
-}
-textbox {
-    background-color:            @background;
-    text-color:                  @foreground;
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
-    highlight:                   none;
+    vertical-align:              0.0;
+    horizontal-align:            0.5;
 }
