@@ -59,15 +59,11 @@ inputbar {
     border-color:                @selected;
     background-color:            transparent;
     text-color:                  @foreground;
-    children:                    [ "textbox-prompt-colon", "prompt"];
+    children:                    [ "prompt" ];
 }
 
 dummy {
     background-color:            transparent;
-}
-
-textbox-prompt-colon {
-    enabled:                     false;
 }
 
 prompt {
@@ -91,7 +87,7 @@ message {
 }
 
 textbox {
-    background-color:            inherit;
+    background-color:            transparent;
     text-color:                  inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
