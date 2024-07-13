@@ -8,7 +8,7 @@
 ### Wallpaper picker
 ![](screenshots/wallpaper_picker.jpg)
 
-# Current dependencies:
+# Dependencies
 ### Hyprland
 > hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp brightnessctl pamixer
 
@@ -33,35 +33,8 @@
 ### Peripherals
 > solaar
 
-
-# Pywal
-### Telegram
-Walogram is used to generate theme https://codeberg.org/thirtysixpw/walogram. After generating first theme, remember to change theme in telegram following walogram doc https://codeberg.org/thirtysixpw/walogram#applying-theme
-
-### Vscode
-Install https://marketplace.visualstudio.com/items?itemName=dlasagno.wal-theme vscode extension
-
-
-# GTK
-More information
-* https://wiki.archlinux.org/title/Cursor_themes 
-* https://www.youtube.com/watch?v=CF3UFxH8d0Y
-
-### Changing theme
-* download theme and move to `/usr/share/themes`
-* install and run `nwg-look` and change theme under `Widgets` tab
-
-### Changing icons
-* download theme and move to `/usr/share/icons`
-* install and run `nwg-look` and change theme under `Icon theme` tab
-
-### Changing cursor
-* download cursor and move it to `/usr/share/icons`
-* install and run `nwg-look` and change cursor under `Mouse cursor` tab
-* edit `/usr/share/icons/default/index.theme` to match cursor directory
-* create and edit `/home/USER/.icons/default/index.theme` to match cursor directory
-* don't change anything in `.gtkrc-2.0`, this file will be overwritten by nwg-look
-
+### Dotfiles management
+> stow
 
 # TODO
 * Hyprland config
@@ -97,3 +70,30 @@ More information
     * It should cycle like windows alt + tab, so recent windows should be at the top
 * Hyprpaper
     * Make it use current wallpaper and current theme colors
+
+# Migrating to new machine
+Dotfiles management is done using [GNU stow](https://www.gnu.org/software/stow/). For more information watch [dotfiles management with GNU stow view](https://www.youtube.com/watch?v=y6XCebnB9gs).
+
+### Requirements
+Make sure that following dependencies are installed on your system
+```
+pacman -S git stow
+```
+
+### Installation
+First, clone repo to `$HOME` directory using git
+
+```
+$ git clone ...
+$ cd dotfiles
+```
+
+then use GNU stow to create symlinks
+```
+$ stow .
+```
+
+if there are any files conflicting with this repo use following command. Beware that doing it will overwrite files in this repo with corresponding local ones
+```
+$ stow --adopt .
+```
