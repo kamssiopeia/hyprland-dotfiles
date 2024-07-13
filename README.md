@@ -1,12 +1,12 @@
 # Screenshots
 ### Preview
-![](Dots_showcase/main.jpg)
+![](screenshots/main.jpg)
 
 ### App launcher
-![](Dots_showcase/launcher.jpg)
+![](screenshots/launcher.jpg)
 
 ### Wallpaper picker
-![](Dots_showcase/wallpaper_picker.jpg)
+![](screenshots/wallpaper_picker.jpg)
 
 # Current dependencies:
 ### Hyprland
