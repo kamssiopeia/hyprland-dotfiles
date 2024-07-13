@@ -76,6 +76,7 @@ fi
 
 # Shell integrations
 eval "$(fzf --zsh)"
+eval "$(thefuck --alias)"
 
 # NVM
 source /usr/share/nvm/init-nvm.sh

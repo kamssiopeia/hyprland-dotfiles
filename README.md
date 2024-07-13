@@ -21,7 +21,7 @@ network-manager network-manager-applet dnsutils dnsmasq
 
 ### Terminal
 ```
-zsh fzf
+zsh fzf thefuck
 ```
 
 ### Theme
