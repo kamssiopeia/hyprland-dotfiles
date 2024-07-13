@@ -114,7 +114,6 @@ stow --adopt .
     * Figure out inactive border color, change active border colors to be clearly visible (Hyprland)
     * Improve vscode colors (some text is very hard to read)
 * Rofi theme switcher
-    * Stylize theme switcher - simple list with search bar
     * Add apply current wallpaper theme entry
 * Rofi window / workspace switcher
     * Try to make it work like windows / kde alt + tab (holding alt to display etc.)
