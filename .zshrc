@@ -65,6 +65,9 @@ zstyle ':completion:*' menu no # Disables default zsh completion menu
 
 # Aliases
 alias ls='ls --color'
+alias v='vim'
+alias y='yazi'
+alias c='clear'
 
 # Secret aliases
 if [ -f "$HOME/.zsh_aliases" ]; then
