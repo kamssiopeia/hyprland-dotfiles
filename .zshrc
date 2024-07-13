@@ -66,6 +66,11 @@ zstyle ':completion:*' menu no # Disables default zsh completion menu
 # Aliases
 alias ls='ls --color'
 
+# Secret aliases
+if [ -f "$HOME/.zsh_aliases" ]; then
+   source $HOME/.zsh_aliases
+fi
+
 # Shell integrations
 eval "$(fzf --zsh)"
 
