@@ -54,6 +54,35 @@ solaar
 stow
 ```
 
+
+# Migrating to new machine
+Dotfiles management is done using [GNU stow](https://www.gnu.org/software/stow/). For more information watch [dotfiles management with GNU stow view](https://www.youtube.com/watch?v=y6XCebnB9gs).
+
+### Requirements
+Make sure that following dependencies are installed on your system
+```
+pacman -S git stow
+```
+
+### Installation
+First, clone repo to `$HOME` directory using git
+
+```
+$ git clone ...
+$ cd dotfiles
+```
+
+then use GNU stow to create symlinks
+```
+$ stow .
+```
+
+if there are any files conflicting with this repo use following command. Beware that doing it will overwrite files in this repo with corresponding local ones
+```
+$ stow --adopt .
+```
+
+
 # TODO
 * Hyprland config
     * Cleanup hyprland config
@@ -88,30 +117,3 @@ stow
     * It should cycle like windows alt + tab, so recent windows should be at the top
 * Hyprpaper
     * Make it use current wallpaper and current theme colors
-
-# Migrating to new machine
-Dotfiles management is done using [GNU stow](https://www.gnu.org/software/stow/). For more information watch [dotfiles management with GNU stow view](https://www.youtube.com/watch?v=y6XCebnB9gs).
-
-### Requirements
-Make sure that following dependencies are installed on your system
-```
-pacman -S git stow
-```
-
-### Installation
-First, clone repo to `$HOME` directory using git
-
-```
-$ git clone ...
-$ cd dotfiles
-```
-
-then use GNU stow to create symlinks
-```
-$ stow .
-```
-
-if there are any files conflicting with this repo use following command. Beware that doing it will overwrite files in this repo with corresponding local ones
-```
-$ stow --adopt .
-```
