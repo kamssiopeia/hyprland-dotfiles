@@ -65,21 +65,21 @@ pacman -S git stow
 ```
 
 ### Installation
-First, clone repo to `$HOME` directory using git
+First, clone repo to `$HOME` directory using git, then `cd` into it
 
 ```
-$ git clone ...
-$ cd dotfiles
+git clone ...
+cd dotfiles
 ```
 
 then use GNU stow to create symlinks
 ```
-$ stow .
+stow .
 ```
 
 if there are any files conflicting with this repo use following command. Beware that doing it will overwrite files in this repo with corresponding local ones
 ```
-$ stow --adopt .
+stow --adopt .
 ```
 
 
