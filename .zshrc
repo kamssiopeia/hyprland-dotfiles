@@ -69,4 +69,7 @@ alias ls='ls --color'
 # Shell integrations
 eval "$(fzf --zsh)"
 
+# NVM
+source /usr/share/nvm/init-nvm.sh
+
 # Base configuration isnspired by https://www.youtube.com/watch?v=ud7YxC33Z3w
