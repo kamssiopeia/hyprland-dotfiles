@@ -60,9 +60,16 @@ stow
 ```
 
 
-# Migrating to new machine
-Dotfiles management is done using [GNU stow](https://www.gnu.org/software/stow/). For more information watch [dotfiles management with GNU stow view](https://www.youtube.com/watch?v=y6XCebnB9gs).
+# Dotfiles repository
+Dotfiles management is done using [GNU stow](https://www.gnu.org/software/stow/). For more information watch [dotfiles management with GNU stow video](https://www.youtube.com/watch?v=y6XCebnB9gs).
 
+## Adding new files to configuration
+1. Create new file inside repository. Remember that directory tree should correspond to local directory tree
+2. Create symlink using GNU stow
+3. Add file to git
+
+
+## Migrating to new machine
 ### Requirements
 Make sure that following dependencies are installed on your system
 ```
