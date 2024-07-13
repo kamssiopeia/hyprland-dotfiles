@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rofi_theme=$HOME/.config/rofi/launcher/style
+rofi_theme=$HOME/.config/rofi/theme/style
 themes_dir=$HOME/.config/wal/colorschemes
 
 selected_theme="$(find $themes_dir -type f,l -name '*.json' -printf "%P\n" | sort | rofi -dmenu -i -p " " -theme ${rofi_theme})"
