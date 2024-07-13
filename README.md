@@ -19,6 +19,11 @@ hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprl
 network-manager network-manager-applet dnsutils dnsmasq
 ```
 
+### Terminal
+```
+zsh fzf
+```
+
 ### Theme
 ```
 papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
