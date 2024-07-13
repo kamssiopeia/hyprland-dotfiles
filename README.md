@@ -10,31 +10,49 @@
 
 # Dependencies
 ### Hyprland
-> hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp brightnessctl pamixer
+```
+hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp brightnessctl pamixer
+```
 
 ### Network
-> network-manager network-manager-applet dnsutils dnsmasq
+```
+network-manager network-manager-applet dnsutils dnsmasq
+```
 
 ### Theme
-> papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
+```
+papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
+```
 
 ### Pywal theming
-> pywal-16-colors walogram-git
+```
+pywal-16-colors walogram-git
+```
 
 ### Apps
-> kitty nemo nemo-fileroller keepassxc code gnome-font-viewer yazi
+```
+kitty nemo nemo-fileroller keepassxc code gnome-font-viewer yazi
+```
 
 ### Programming
-> docker docker-compose postman git gitflow-avh nvm jdk11-openjdk jdk21-openjdk
+```
+docker docker-compose postman git gitflow-avh nvm jdk11-openjdk jdk21-openjdk
+```
 
 ### Bluetooth
-> bluez bluez-utils
+```
+bluez bluez-utils
+```
 
 ### Peripherals
-> solaar
+```
+solaar
+```
 
 ### Dotfiles management
-> stow
+```
+stow
+```
 
 # TODO
 * Hyprland config
