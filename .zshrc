@@ -72,4 +72,7 @@ eval "$(fzf --zsh)"
 # NVM
 source /usr/share/nvm/init-nvm.sh
 
+# Default editor
+export EDITOR=/usr/bin/vim
+
 # Base configuration isnspired by https://www.youtube.com/watch?v=ud7YxC33Z3w
