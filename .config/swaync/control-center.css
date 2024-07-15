@@ -99,15 +99,12 @@ progressbar {
     font-size: 1.2em;
 }
 
-.widget-title button:hover,
-.widget-dnd>switch:hover,
-.widget-dnd>switch:checked:hover {
+.widget-title button:hover {
     background-color: @color14;
     color: @background;
 }
 
-.widget-title button:active,
-.widget-dnd>switch:checked {
+.widget-title button:active {
     background: @color14;
     color: @background;
 }
@@ -129,6 +126,15 @@ progressbar {
 .widget-dnd>switch slider {
     background: @foreground;
     border-radius: 6px;
+}
+
+.widget-dnd>switch:checked {
+    background: alpha(@color14, .3);
+    color: @color14;
+}
+
+.widget-dnd>switch slider:checked {
+    background: @color14;
 }
 
 /* ## BUTTONS MENU ## */
