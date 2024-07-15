@@ -41,9 +41,15 @@ zinit cdreplay -q
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Keybindings
-bindkey -e # Emacs keybindings
-bindkey '^[[A' history-search-backward
-bindkey '^[[B' history-search-forward
+bindkey '^[[A' history-search-backward # ^
+bindkey '^[[B' history-search-forward # ↓
+bindkey "^[[3~" delete-char # del
+bindkey "^[[1;5C" forward-word # ctrl + →
+bindkey "^[[1;5D" backward-word # ctrl + ←
+bindkey '^H' backward-kill-word # ctrl + backspace
+bindkey '5~' kill-word # ctrl + del
+bindkey  "^[[H" beginning-of-line # home
+bindkey  "^[[F" end-of-line # end
 
 # History
 HISTSIZE=5000
