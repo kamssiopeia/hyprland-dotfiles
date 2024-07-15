@@ -22,3 +22,6 @@ echo "Reloaded kitty"
 
 killall -SIGUSR2 waybar
 echo "Reloaded waybar"
+
+swaync-client -rs
+echo "Reloaded swaync"
