@@ -83,6 +83,7 @@ progressbar {
 .notification-group-collapse-button:hover,
 .notification-group-close-all-button:hover {
     background: @color14;
+    color: @background;
 }
 
 /* ## WIDGETS ## */
@@ -102,11 +103,13 @@ progressbar {
 .widget-dnd>switch:hover,
 .widget-dnd>switch:checked:hover {
     background-color: @color14;
+    color: @background;
 }
 
 .widget-title button:active,
 .widget-dnd>switch:checked {
     background: @color14;
+    color: @background;
 }
 
 /* ## NOTIFICATION CLEAR ## */
@@ -145,6 +148,7 @@ progressbar {
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
     background: @color14;
+    color: @background;
 }
 
 
