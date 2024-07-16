@@ -13,7 +13,7 @@ if [ ! -d "${CACHE_DIR}" ] ; then
     mkdir -p "${CACHE_DIR}"
 fi
 
-for wallpaper in "$WALLPAPERS_DIR"/*.{jpg,jpeg,png,webp}; do
+for wallpaper in "$WALLPAPERS_DIR"/*.{jpg,jpeg,png}; do
     if [ -f "$wallpaper" ]; then
         wallpaper_name=$(basename "$wallpaper")
         if [ ! -f "${CACHE_DIR}/${wallpaper_name}" ] ; then
