@@ -126,5 +126,3 @@ stow --adopt .
     * Try to make it work like windows / kde alt + tab (holding alt to display etc.)
     * Try to implement secondary switcher for windows of current window type (if chrome is active, cycle between chrome instances etc.)
     * It should cycle like windows alt + tab, so recent windows should be at the top
-* Hyprpaper
-    * Make it use current wallpaper and current theme colors
