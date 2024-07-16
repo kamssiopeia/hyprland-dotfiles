@@ -118,10 +118,7 @@ stow --adopt .
 * Create workspaces for spotify / discord + telegram
 * Pywal
     * Change colors in nemo (GTK)
-    * Figure out inactive border color, change active border colors to be clearly visible (Hyprland)
     * Improve vscode colors (some text is very hard to read)
-* Rofi theme switcher
-    * Add apply current wallpaper theme entry
 * Rofi window / workspace switcher
     * Try to make it work like windows / kde alt + tab (holding alt to display etc.)
     * Try to implement secondary switcher for windows of current window type (if chrome is active, cycle between chrome instances etc.)
