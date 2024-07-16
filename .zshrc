@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Set the directory we want to store zinit and plugins
+# Set the directory to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
@@ -41,15 +41,17 @@ zinit cdreplay -q
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Keybindings
-bindkey '^[[A' history-search-backward # ^
-bindkey '^[[B' history-search-forward # ↓
-bindkey "^[[3~" delete-char # del
-bindkey "^[[1;5C" forward-word # ctrl + →
-bindkey "^[[1;5D" backward-word # ctrl + ←
-bindkey '^H' backward-kill-word # ctrl + backspace
-bindkey '5~' kill-word # ctrl + del
-bindkey  "^[[H" beginning-of-line # home
-bindkey  "^[[F" end-of-line # end
+bindkey -e # Use emacs keybindings
+bindkey '^[[B' history-search-forward # [↓] - Search forward in history considering prefix
+bindkey '^[[A' history-search-backward # [↑] - search backward in history considering prefix
+bindkey "^[[3~" delete-char # [Delete] - Delete forward
+bindkey "^?" backward-delete-char # [Backspace] - Delete backward
+bindkey '5~' kill-word # [Ctrl + Delete] - Delete whole word forward
+bindkey '^H' backward-kill-word # [Ctrl + Backspace] - Delete whole word backward
+bindkey "^[[1;5C" forward-word # [Ctrl + →] - Move forward one word
+bindkey "^[[1;5D" backward-word # [Ctrl + ←] - Move backward one word
+bindkey  "^[[H" beginning-of-line # [Home] - Go to beginning of line
+bindkey  "^[[F" end-of-line # [End] - Go to end of line
 
 # History
 HISTSIZE=5000
