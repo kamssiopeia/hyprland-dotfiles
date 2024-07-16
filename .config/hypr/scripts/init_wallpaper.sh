@@ -3,14 +3,14 @@
 sleep 4
 
 if [ -e "${HOME}/.cache/wal/colors.json" ]; then
+    echo "Palette found, loading recent wallpaper"
+
     recent_wallpaper_path=$(cat $HOME/.cache/wal/wal)
 
     hyprctl hyprpaper preload "$recent_wallpaper_path"
     hyprctl hyprpaper wallpaper ",$recent_wallpaper_path"
-
-    echo "Palette found, loaded recent wallpaper"
 else
-    sh $HOME/.config/hypr/scripts/wallpaper_randomizer.sh
+    echo "Palette not found, randomizing wallpaper"
 
-    echo "Palette not found, randomized wallpaper"
+    sh $HOME/.config/hypr/scripts/wallpaper_randomizer.sh
 fi

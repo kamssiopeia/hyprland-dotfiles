@@ -12,6 +12,7 @@ if ! test -f $wallpaper_path; then
     exit 1
 fi
 
+echo "Changing wallpaper"
 case $(file -b $wallpaper_path | awk '{print $1}') in
   'JPEG'*) ;;
   'PNG'*) ;;
@@ -23,4 +24,3 @@ esac
 
 hyprctl hyprpaper preload "$wallpaper_path"
 hyprctl hyprpaper wallpaper ",$wallpaper_path"
-echo "Changed wallpaper"

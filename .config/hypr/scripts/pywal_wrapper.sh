@@ -5,6 +5,7 @@ if (( $# == 0 )); then
     exit 1
 fi
 
+echo "Generating color palette"
 while getopts g:t: flag
 do
     case "${flag}" in
@@ -12,16 +13,15 @@ do
         t) wal -n -s --theme ${OPTARG};;
     esac
 done
-echo "Generated color palette"
 
+echo "Generating telegram palette"
 walogram -s -B
-echo "Generated telegram palette"
 
+echo "Reloading kitty"
 killall -SIGUSR1 kitty
-echo "Reloaded kitty"
 
+echo "Reloading waybar"
 killall -SIGUSR2 waybar
-echo "Reloaded waybar"
 
+echo "Reloading swaync"
 swaync-client -rs
-echo "Reloaded swaync"
