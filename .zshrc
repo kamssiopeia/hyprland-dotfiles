@@ -76,6 +76,7 @@ alias ls='ls --color'
 alias v='vim'
 alias y='yazi'
 alias c='clear'
+alias history='cat ~/.zsh_history'
 
 # Secret aliases
 if [ -f "$HOME/.zsh_aliases" ]; then
