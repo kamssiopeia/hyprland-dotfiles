@@ -54,7 +54,7 @@ bindkey  "^[[H" beginning-of-line # [Home] - Go to beginning of line
 bindkey  "^[[F" end-of-line # [End] - Go to end of line
 
 # History
-HISTSIZE=5000
+HISTSIZE=10000
 HISTFILE=~/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
@@ -65,6 +65,7 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
+setopt hist_expire_dups_first
 
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' # Makes autocomplete case insensitive
@@ -76,7 +77,7 @@ alias ls='ls --color'
 alias v='vim'
 alias y='yazi'
 alias c='clear'
-alias history='cat ~/.zsh_history'
+alias history='fc -i -l 1'
 
 # Secret aliases
 if [ -f "$HOME/.zsh_aliases" ]; then
