@@ -18,7 +18,7 @@
 
 /* ## NOTIFICATIONS ## */
 .control-center .notification-row .notification-background {
-    background: alpha(@foreground, .15);
+    background: mix(@background, @foreground, 0.15);
     border-radius: 15px;
     margin: 5px 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
@@ -74,7 +74,7 @@ progressbar {
 
 .notification-group-collapse-button,
 .notification-group-close-all-button {
-    background: alpha(@foreground, .15);
+    background: mix(@background, @foreground, 0.15);
     color: @foreground;
     border-radius: 6px;
     padding: 4px;
@@ -111,14 +111,14 @@ progressbar {
 
 /* ## NOTIFICATION CLEAR ## */
 .widget-title button {
-    background: alpha(@foreground, .15);
+    background: mix(@background, @foreground, 0.15);
     border-radius: 6px;
     padding: 2px 5px;
 }
 
 /* ## DND ## */
 .widget-dnd>switch {
-    background: alpha(@foreground, .15);
+    background: mix(@background, @foreground, 0.15);
     border-radius: 6px;
     padding: 2px;
 }
@@ -142,7 +142,7 @@ progressbar {
     font-size: x-large;
     padding: 6px 2px;
     border-radius: 12px;
-    background: alpha(@foreground, .15);
+    background: mix(@background, @foreground, 0.15);
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
@@ -160,7 +160,7 @@ progressbar {
 
 /* ## MUSIC PLAYER ## */
 .widget-mpris {
-    background: alpha(@foreground, .15);
+    background: mix(@background, @foreground, 0.15);
     border-radius: 12px;
     color: @foreground;
 }
