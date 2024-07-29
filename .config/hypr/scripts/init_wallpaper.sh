@@ -1,14 +1,14 @@
 #!/bin/bash
+CACHED_WALLPAPER=$HOME/.cache/wallpaper_changer/wallpaper
 
 sleep 4
 
-if [ -e "${HOME}/.cache/wal/colors.json" ]; then
+if [[ -e "${HOME}/.cache/wal/colors.json" && -f "$CACHED_WALLPAPER" ]]; then
     echo "Palette found, loading recent wallpaper"
 
-    recent_wallpaper_path=$(cat $HOME/.cache/wal/wal)
+    recent_wallpaper_path=$(cat $CACHED_WALLPAPER)
 
-    hyprctl hyprpaper preload "$recent_wallpaper_path"
-    hyprctl hyprpaper wallpaper ",$recent_wallpaper_path"
+    sh $HOME/.config/hypr/scripts/wallpaper_randomizer.sh $recent_wallpaper_path
 else
     echo "Palette not found, randomizing wallpaper"
 
