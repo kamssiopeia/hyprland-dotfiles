@@ -97,7 +97,6 @@ stow --adopt .
 
 # TODO
 * Hyprland config
-    * Cleanup hyprland config
     * Split config into files
     * Add monitor profiles 3 monitors / single monitor
 * Notifications
