@@ -78,6 +78,7 @@ alias v='vim'
 alias y='yazi'
 alias c='clear'
 alias history='fc -i -l 1'
+alias dka='docker kill $(docker ps -q)'
 
 # Secret aliases
 if [ -f "$HOME/.zsh_aliases" ]; then
