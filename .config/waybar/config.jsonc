@@ -40,6 +40,7 @@
     "format": "{icon} {volume}%{format_source}",
     "format-muted": "<span foreground='#FF5555'></span>  {format_source}",
     "format-source-muted": " <span foreground='#FF5555'></span> ",
+    "format-source": "",
     "format-icons": {
       "default": ["", " ", " "]
     },
