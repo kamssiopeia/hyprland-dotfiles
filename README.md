@@ -11,7 +11,7 @@
 # Dependencies
 ### Hyprland
 ```
-hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland swaync pipewire pavucontrol grim slurp brightnessctl pamixer
+hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland-git swaync pipewire pavucontrol grim slurp brightnessctl pamixer
 ```
 
 ### Network
@@ -31,7 +31,7 @@ papirus-icon-theme nerd-fonts breeze breeze-gtk nwg-look dracula
 
 ### Pywal theming
 ```
-pywal-16-colors walogram-git
+python-pywal16 walogram-git
 ```
 
 ### Apps
