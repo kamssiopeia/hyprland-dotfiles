@@ -59,14 +59,19 @@ solaar
 stow
 ```
 
+### Misc
+```
+bongocat
+```
+
 
 # Dotfiles repository
 Dotfiles management is done using [GNU stow](https://www.gnu.org/software/stow/). For more information watch [dotfiles management with GNU stow video](https://www.youtube.com/watch?v=y6XCebnB9gs).
 
 ## Adding new files to configuration
 1. Create new file inside repository. Remember that directory tree should correspond to local directory tree
-2. Create symlink using GNU stow
-3. Add file to git
+2. Add file to git
+3. Create symlink using GNU stow with command `stow .`
 
 
 ## Migrating to new machine
