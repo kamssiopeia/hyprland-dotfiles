@@ -101,16 +101,12 @@ stow --adopt .
 
 
 # TODO
-* Hyprland config
-    * Split config into files
-    * Add monitor profiles 3 monitors / single monitor
+* Split hypr config into multiple files
 * Notifications
     * Configure notifications to show only on main screen
     * Notifications for laptop shortcut actions
-* Add media center
-* Virtual desktopesque workspaces - https://github.com/levnikmyskin/hyprland-virtual-desktops
 * Add QT theme
-* Add ARCH update checker
+* Improve screenshot tool. Ie. migrate to flameshot
 * Logitech Master MX 3s
     * Configure keybinds
 * Powermenu
@@ -118,12 +114,8 @@ stow --adopt .
 * Create suspend script and use it in hypridle and powermenu
     * Pause all players
     * Mute microphone / unmute after suspend
-* Checkout flameshot
-* Create workspaces for spotify / discord + telegram
 * Pywal
     * Change colors in nemo (GTK)
     * Improve vscode colors (some text is very hard to read)
-* Rofi window / workspace switcher
-    * Try to make it work like windows / kde alt + tab (holding alt to display etc.)
-    * Try to implement secondary switcher for windows of current window type (if chrome is active, cycle between chrome instances etc.)
-    * It should cycle like windows alt + tab, so recent windows should be at the top
+* Add support for both SWWW and hyrpaper
+
