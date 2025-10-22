@@ -64,7 +64,7 @@
     "timezone": "Europe/Warsaw",
     "format": "{:%d.%m %R}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "on-click": "~/.config/hypr/scripts/google_calendar.sh"
+    "on-click": "~/.config/hypr/scripts/google_calendar_webapp.sh"
   },
   "custom/notification": {
     "tooltip": false,
