@@ -11,7 +11,7 @@
 # Dependencies
 ### Hyprland
 ```
-hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland-git swaync pipewire pavucontrol grim slurp brightnessctl pamixer
+hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland-git swaync pipewire pavucontrol brightnessctl pamixer
 ```
 
 ### Network
@@ -62,6 +62,11 @@ stow
 ### Misc
 ```
 bongocat
+```
+
+### Screenshot
+```
+grim slurp satty
 ```
 
 
