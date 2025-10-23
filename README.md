@@ -11,7 +11,7 @@
 # Dependencies
 ### Hyprland
 ```
-hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland-git swaync pipewire pavucontrol grim slurp brightnessctl pamixer
+hyprland hyprpaper hyprlock hypridle xdg-desktop-portal xdg-desktop-portal-hyprland waybar rofi-lbonn-wayland-git swaync pipewire pavucontrol brightnessctl pamixer
 ```
 
 ### Network
@@ -64,6 +64,11 @@ stow
 bongocat
 ```
 
+### Screenshot
+```
+grim slurp satty
+```
+
 
 # Dotfiles repository
 Dotfiles management is done using [GNU stow](https://www.gnu.org/software/stow/). For more information watch [dotfiles management with GNU stow video](https://www.youtube.com/watch?v=y6XCebnB9gs).
@@ -104,7 +109,8 @@ stow --adopt .
 * Split hypr config into multiple files
 * Notifications
     * Configure notifications to show only on main screen
-    * Notifications for laptop shortcut actions
+    * Notifications for laptop shortcut actions (check SwayOSD)
+    * Add notification for UX feedback ie. screenshot taken, wallpaper changed
 * Add QT theme
 * Improve screenshot tool. Ie. migrate to flameshot
 * Logitech Master MX 3s
@@ -118,4 +124,3 @@ stow --adopt .
     * Change colors in nemo (GTK)
     * Improve vscode colors (some text is very hard to read)
 * Add support for both SWWW and hyrpaper
-
