@@ -1,8 +1,17 @@
 #!/bin/bash
-save_to_file=${1:-false}
+mode=${1:-region} # region | fullscreen
+save_to_file=${2:-false}
 
 SCREENSHOT_DIR=~/Pictures
-REGION=$(slurp -d -w 0 -b "#CCCCFF4D")
+
+case "$mode" in
+  region)
+    region=$(slurp -d -w 0 -b "#CCCCFF4D")
+    ;;
+  fullscreen)
+    region=$(hyprctl monitors -j | jq -r '.[] | select(.focused == true) | "\(.x),\(.y) \((.width / .scale) | floor)x\((.height / .scale) | floor)"')
+    ;;
+esac
 
 satty_args=(
   --filename -
@@ -18,5 +27,5 @@ if [[ $save_to_file == true ]]; then
   )
 fi
 
-grim -g "$REGION" - |
+grim -g "$region" - |
   satty "${satty_args[@]}"
