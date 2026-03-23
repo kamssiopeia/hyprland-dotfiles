@@ -4,8 +4,6 @@ import QtQuick
 import QtQuick.Layouts
 
 PanelWindow {
-    id: root
-
     anchors.top: true
     anchors.left: true
     anchors.right: true
@@ -55,8 +53,8 @@ PanelWindow {
                     color: modelData.focused ? foregroundColor : Qt.alpha(foregroundColor, 0.6)
 
                     font {
-                        family: root.fontFamily
-                        pixelSize: root.fontSize
+                        family: fontFamily
+                        pixelSize: fontSize
                     }
 
                     MouseArea {
@@ -73,6 +71,25 @@ PanelWindow {
             Layout.preferredWidth: 1
 
             Item { Layout.fillWidth: true }
+
+            Text {
+                id: clock
+                color: foregroundColor
+
+                font {
+                    family: fontFamily
+                    pixelSize: fontSize
+                }
+
+                text: Qt.formatDateTime(new Date(), "dd.MM HH:mm")
+
+                Timer {
+                    interval: 1000
+                    running: true
+                    repeat: true
+                    onTriggered: clock.text = Qt.formatDateTime(new Date(), "dd.MM HH:mm")
+                }
+            }
         }
     }
 }
