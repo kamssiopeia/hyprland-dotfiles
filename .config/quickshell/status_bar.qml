@@ -40,16 +40,18 @@ PanelWindow {
             Layout.preferredWidth: 1
 
             IconImage {
-                property string activeWindow: Hyprland.activeToplevel.wayland?.appId
+                property string activeWindow: Hyprland.activeToplevel?.wayland?.appId ?? ""
+                property bool isActive: Hyprland.activeToplevel?.wayland?.activated ?? false
 
                 source: Quickshell.iconPath(activeWindow, true)
                 width: 20
                 height: 20
-                visible: status === Image.Ready && Hyprland.activeToplevel.wayland?.activated
+                visible: status === Image.Ready && isActive
             }
 
             Text {
-                property string activeWindow: Hyprland.activeToplevel.wayland?.appId
+                property string activeWindow: Hyprland.activeToplevel?.wayland?.appId ?? ""
+                property bool isActive: Hyprland.activeToplevel?.wayland?.activated ?? false
 
                 text: activeWindow
                 color: foregroundColor
@@ -57,7 +59,7 @@ PanelWindow {
                     family: fontFamily
                     pixelSize: fontSize
                 }
-                visible: Hyprland.activeToplevel.wayland?.activated
+                visible: isActive
             }
 
             Item { Layout.fillWidth: true }
