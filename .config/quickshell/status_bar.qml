@@ -1,4 +1,5 @@
 import Quickshell
+import Quickshell.Io
 import Quickshell.Widgets
 import Quickshell.Hyprland
 import QtQuick
@@ -110,6 +111,17 @@ PanelWindow {
                     running: true
                     repeat: true
                     onTriggered: clock.text = Qt.formatDateTime(new Date(), "dd.MM HH:mm")
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: openCalendar.running = true
+                }
+
+                Process {
+                    id: openCalendar
+                    command: ["sh", "-c", "~/.config/hypr/scripts/google_calendar_webapp.sh"]
                 }
             }
         }
