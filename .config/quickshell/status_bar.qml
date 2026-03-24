@@ -1,4 +1,5 @@
 import Quickshell
+import Quickshell.Widgets
 import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Layouts
@@ -36,6 +37,27 @@ PanelWindow {
         RowLayout {
             Layout.fillWidth: true
             Layout.preferredWidth: 1
+
+            IconImage {
+                property string activeWindow: Hyprland.activeToplevel.wayland?.appId
+
+                source: Quickshell.iconPath(activeWindow, true)
+                width: 20
+                height: 20
+                visible: status === Image.Ready && Hyprland.activeToplevel.wayland?.activated
+            }
+
+            Text {
+                property string activeWindow: Hyprland.activeToplevel.wayland?.appId
+
+                text: activeWindow
+                color: foregroundColor
+                font {
+                    family: fontFamily
+                    pixelSize: fontSize
+                }
+                visible: Hyprland.activeToplevel.wayland?.activated
+            }
 
             Item { Layout.fillWidth: true }
         }
