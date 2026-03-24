@@ -106,12 +106,11 @@ PanelWindow {
                     pixelSize: fontSize
                 }
 
-                text: Qt.formatDateTime(new Date(), "dd.MM HH:mm")
-
                 Timer {
                     interval: 1000
                     running: true
                     repeat: true
+                    triggeredOnStart: true
                     onTriggered: clock.text = Qt.formatDateTime(new Date(), "dd.MM HH:mm")
                 }
 
