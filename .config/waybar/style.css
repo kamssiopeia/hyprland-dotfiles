@@ -17,6 +17,7 @@ window#waybar {
 
 window#waybar.empty #window {  
     background: none;
+    margin-right: 0;
 }
 
 .modules-left,
