@@ -9,7 +9,7 @@
   "margin-right": 5,
   "margin-top": 5,
   // Modules order
-  "modules-left": ["hyprland/window"],
+  "modules-left": ["hyprland/window", "mpris"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
@@ -93,5 +93,18 @@
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "Controller:\n{controller_alias}\t{controller_address}\n\nDevices connected {num_connections}:\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}\t{device_battery_percentage}% battery"
+  },
+  "mpris": {
+    "format": "{player_icon} {artist} - {title}",
+    "format-paused": "{status_icon} {artist} - {title}",
+    "max-length": 30,
+    "player-icons": {
+      "spotify": "",
+      "default": "▶"
+    },
+    "status-icons": {
+      "paused": "⏸",
+      "stopped": "󰓛"
+    }
   }
 }

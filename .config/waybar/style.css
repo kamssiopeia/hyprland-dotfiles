@@ -47,10 +47,15 @@ window#waybar.empty #window {
     margin-left: 25px;
 }
 
+#window {
+    margin-right: 25px;
+}
+
 /* WORKSPACES */
 #workspaces button {
     padding: 0 3px;
     color: alpha(@foreground, 0.6);
+    transition: all 0.3s ease;
 }
 
 #workspaces button:hover {
@@ -82,4 +87,19 @@ window#waybar.empty #window {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#mpris {
+    background-color: @color7;
+    color: @background;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+#mpris:hover {
+    background-color: lighter(@color7);
+    color: @background;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
