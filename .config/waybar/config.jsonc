@@ -32,6 +32,10 @@
   },
   "hyprland/window": {
     "format": "{class}",
+    "rewrite": {
+        "chrome-gemini.google.com__app-Default": "gemini",
+        "teams-for-linux": "teams"
+    },
     "icon": true,
     "icon-size": 20
   },
