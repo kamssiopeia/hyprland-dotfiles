@@ -34,7 +34,9 @@
     "format": "{class}",
     "rewrite": {
         "chrome-gemini.google.com__app-Default": "gemini",
-        "teams-for-linux": "teams"
+        "teams-for-linux": "teams",
+        "jetbrains-idea": "intellij",
+        "org.telegram.desktop": "telegram"
     },
     "icon": true,
     "icon-size": 20
