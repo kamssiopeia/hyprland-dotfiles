@@ -99,8 +99,14 @@ window#waybar.empty #window {
     transition: all 0.3s ease;
 }
 
-#mpris:hover {
+#mpris:hover,
+#mpris.paused:hover {
     background-color: lighter(@color7);
     color: @background;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#mpris.paused {
+    background-color: alpha(darker(@color8), 0.8);
+    color: alpha(@color7, 0.9);
 }
