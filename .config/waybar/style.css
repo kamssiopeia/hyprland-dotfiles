@@ -39,17 +39,17 @@ window#waybar.empty #window {
 
 #custom-notification,
 #bluetooth {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 #clock,
 #battery,
 #pulseaudio {
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 #window {
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 /* WORKSPACES */

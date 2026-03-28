@@ -64,7 +64,7 @@
   },
   "tray": {
     "icon-size": 20,
-    "spacing": 10
+    "spacing": 5
   },
   "clock": {
     "timezone": "Europe/Warsaw",
@@ -106,6 +106,7 @@
     "max-length": 30,
     "player-icons": {
       "spotify": "",
+      "chromium": "",
       "default": "▶"
     },
     "status-icons": {
