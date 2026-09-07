@@ -1,2 +1,2 @@
 #!/bin/bash
-hyprctl dispatch exec "chromium -app='https://calendar.google.com/calendar'"
+hyprctl dispatch 'hl.dsp.exec_cmd("chromium -app='https://calendar.google.com/calendar'")'

@@ -56,7 +56,7 @@ run_cmd() {
 			playerctl pause
 			systemctl suspend
 		elif [[ $1 == '--logout' ]]; then
-			hyprctl dispatch exit
+			hyprctl dispatch 'hl.dsp.exit()'
 		fi
 	else
 		exit 0

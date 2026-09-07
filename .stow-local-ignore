@@ -3,5 +3,6 @@
 \.gitmodules
 
 ^/README.*
+.luarc.json
 
 screenshots
