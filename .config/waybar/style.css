@@ -17,6 +17,7 @@ window#waybar {
 
 window#waybar.empty #window {  
     background: none;
+    margin-right: 0;
 }
 
 .modules-left,
@@ -38,19 +39,24 @@ window#waybar.empty #window {
 
 #custom-notification,
 #bluetooth {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 #clock,
 #battery,
 #pulseaudio {
-    margin-left: 25px;
+    margin-left: 15px;
+}
+
+#window {
+    margin-right: 15px;
 }
 
 /* WORKSPACES */
 #workspaces button {
     padding: 0 3px;
     color: alpha(@foreground, 0.6);
+    transition: all 0.3s ease;
 }
 
 #workspaces button:hover {
@@ -82,4 +88,25 @@ window#waybar.empty #window {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+#mpris {
+    background-color: @color7;
+    color: @background;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+#mpris:hover,
+#mpris.paused:hover {
+    background-color: lighter(@color7);
+    color: @background;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#mpris.paused {
+    background-color: alpha(darker(@color8), 0.8);
+    color: alpha(@color7, 0.9);
 }

@@ -1,2 +1,2 @@
 #!/bin/bash
-hyprctl dispatch exec "chromium -app='https://gemini.google.com/app'"
+hyprctl dispatch 'hl.dsp.exec_cmd("chromium -app='https://gemini.google.com/app'")'

@@ -9,7 +9,7 @@
   "margin-right": 5,
   "margin-top": 5,
   // Modules order
-  "modules-left": ["hyprland/window"],
+  "modules-left": ["hyprland/window", "mpris"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "tray",
@@ -32,6 +32,12 @@
   },
   "hyprland/window": {
     "format": "{class}",
+    "rewrite": {
+        "chrome-gemini.google.com__app-Default": "gemini",
+        "teams-for-linux": "teams",
+        "jetbrains-idea": "intellij",
+        "org.telegram.desktop": "telegram"
+    },
     "icon": true,
     "icon-size": 20
   },
@@ -58,7 +64,7 @@
   },
   "tray": {
     "icon-size": 20,
-    "spacing": 10
+    "spacing": 5
   },
   "clock": {
     "timezone": "Europe/Warsaw",
@@ -93,5 +99,19 @@
     "tooltip-format": "{controller_alias}\t{controller_address}",
     "tooltip-format-connected": "Controller:\n{controller_alias}\t{controller_address}\n\nDevices connected {num_connections}:\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}\t{device_battery_percentage}% battery"
+  },
+  "mpris": {
+    "format": "{player_icon} {artist} - {title}",
+    "format-paused": "{status_icon} {artist} - {title}",
+    "max-length": 30,
+    "player-icons": {
+      "spotify": "",
+      "chromium": "",
+      "default": "▶"
+    },
+    "status-icons": {
+      "paused": "⏸",
+      "stopped": "󰓛"
+    }
   }
 }
