@@ -72,7 +72,8 @@ window#waybar.empty #window {
 
 /* CUSTOM-NOTIFICATION */
 #custom-notification {
-    font-family: "NotoSans Nerd Font"
+    font-family: "NotoSans Nerd Font";
+    margin-right: 10px;
 }
 
 #battery.warning {
